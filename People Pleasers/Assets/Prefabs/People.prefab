@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4586ee6686403c9428e5fc777d939dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveInterface: {fileID: 11400000, guid: f7cec592528daea49b25291db5de706f, type: 2}
+  waveInterface: {fileID: 0}
 --- !u!1 &3051915985478732546
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4586ee6686403c9428e5fc777d939dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveInterface: {fileID: 11400000, guid: c23dc16ec3e02f54da7c2a0da6f96605, type: 2}
+  waveInterface: {fileID: 0}
 --- !u!1 &5452435728121176426
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4586ee6686403c9428e5fc777d939dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveInterface: {fileID: 11400000, guid: c23dc16ec3e02f54da7c2a0da6f96605, type: 2}
+  waveInterface: {fileID: 0}
 --- !u!1 &6400990960510369502
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4586ee6686403c9428e5fc777d939dd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveInterface: {fileID: 11400000, guid: f7cec592528daea49b25291db5de706f, type: 2}
+  waveInterface: {fileID: 0}
 --- !u!1 &8537628755013073072
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,14 +10,22 @@ public class PersonSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var currentWave = waveInterfaces[startingWave];
-        StartCoroutine(SpawnAllEnemiesByWave(currentWave));
+        StartCoroutine(SpawnAllWaves());
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private IEnumerator SpawnAllWaves()
+    {
+        for (var curWave = startingWave; curWave < waveInterfaces.Count; curWave++)
+        {
+            var current = waveInterfaces[curWave];
+            yield return StartCoroutine(SpawnAllEnemiesByWave(current));
+        }
     }
 
     private IEnumerator SpawnAllEnemiesByWave(WaveInterface _waveInterface)
@@ -32,8 +40,10 @@ public class PersonSpawner : MonoBehaviour
     private void GeneratePerson(WaveInterface _waveInterface)
     {
         int generateRandomPerson = Random.Range(0, 4);
-        Instantiate(_waveInterface.GetPerson()[generateRandomPerson],
+        int generateRandomTargetPos = Random.Range(0, 2);
+        GameObject personObj = Instantiate(_waveInterface.GetPerson()[generateRandomPerson],
             _waveInterface.GetWaypoint()[0].transform.position,
-            Quaternion.identity);
+            Quaternion.identity) as GameObject;
+        personObj.GetComponent<PersonPathing>().SetWave(_waveInterface);
     }
 }

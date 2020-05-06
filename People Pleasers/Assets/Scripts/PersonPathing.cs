@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PersonPathing : MonoBehaviour
 {
-    public WaveInterface waveInterface;
+    WaveInterface waveInterface;
     List<Transform> waypoints;
     int waypointIndex = 0;
     
@@ -19,6 +19,12 @@ public class PersonPathing : MonoBehaviour
     void Update()
     {
         MoveToTarget();
+    }
+
+    // it will be used for spawn enemy
+    public void SetWave(WaveInterface _waveInterface)
+    {
+        waveInterface = _waveInterface;
     }
 
     private void MoveToTarget()
@@ -38,7 +44,13 @@ public class PersonPathing : MonoBehaviour
         {
             //Reached at the end
             Debug.Log("Reached End");
+            // for now just destroy
+            DestroyGameObj();
         }
         
+    }
+    private void DestroyGameObj()
+    {
+        Destroy(gameObject);
     }
 }
