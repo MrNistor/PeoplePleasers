@@ -23,19 +23,20 @@ public class WaveInterface : ScriptableObject
         return myListWaypoint;
     }
 
-    //public List<GameObject> GetPersonPrefabs()
-    //{
-    //    var myPersonList = new List<GameObject>();
-    //    foreach(GameObject person in personPrefabs)
-    //    {
-
-    //    }
-    //}
-
-    public GameObject GetPerson()
+    public List<GameObject> GetPerson()
     {
-        return personPrefabs;
+        var myPersonList = new List<GameObject>();
+        foreach (Transform person in personPrefabs.transform)
+        {
+            myPersonList.Add(person.gameObject);
+        }
+        return myPersonList;
     }
+
+    //public GameObject GetPerson()
+    //{
+    //    return personPrefabs;
+    //}
 
     public float GetTimeBetweenSpawns()
     {

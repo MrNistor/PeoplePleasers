@@ -6,6 +6,7 @@ public class PersonSpawner : MonoBehaviour
 {   
     public List<WaveInterface> waveInterfaces;
     private int startingWave = 0;
+    //private int generateRandomPerson;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,8 @@ public class PersonSpawner : MonoBehaviour
     }
     private void GeneratePerson(WaveInterface _waveInterface)
     {
-        Instantiate(_waveInterface.GetPerson(),
+        int generateRandomPerson = Random.Range(0, 4);
+        Instantiate(_waveInterface.GetPerson()[generateRandomPerson],
             _waveInterface.GetWaypoint()[0].transform.position,
             Quaternion.identity);
     }
