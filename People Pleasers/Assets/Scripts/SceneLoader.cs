@@ -28,6 +28,7 @@ public class SceneLoader : MonoBehaviour
             StartCoroutine(WaitForSeconds());
         } 
         
+        
     }
 
     IEnumerator WaitForSeconds()
@@ -36,7 +37,7 @@ public class SceneLoader : MonoBehaviour
         LoadNextScene();
     }
 
-    private void LoadNextScene()
+    public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
