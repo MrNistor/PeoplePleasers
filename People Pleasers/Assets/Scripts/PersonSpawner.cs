@@ -39,11 +39,19 @@ public class PersonSpawner : MonoBehaviour
     }
     private void GeneratePerson(WaveInterface _waveInterface)
     {
-        int generateRandomPerson = Random.Range(0, 4);
+        int generateRandomPerson = 0;
+        if (_waveInterface.GetPerson().Count > 1)
+        {
+            generateRandomPerson = Random.Range(0, 4);
+        }
+        else
+        {
+            generateRandomPerson = 0;
+        }
         int generateRandomTargetPos = Random.Range(0, 2);
         GameObject personObj = Instantiate(_waveInterface.GetPerson()[generateRandomPerson],
             _waveInterface.GetWaypoint()[0].transform.position,
-            Quaternion.identity) as GameObject;
+            Quaternion.identity);
         personObj.GetComponent<PersonPathing>().SetWave(_waveInterface);
     }
 }

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7672494f8c2ca346b7a2685723c54f4, type: 3}
   m_Name: WaveB
   m_EditorClassIdentifier: 
-  personPrefabs: {fileID: 8537628755013073072, guid: 61d9a2a7d8705dc40a64280acec0a54a,
+  personPrefabs: {fileID: 2142523221966918259, guid: bfc2cb5e770636041a116d788486a0c7,
     type: 3}
   pathPrefabs: {fileID: 3679485775760102583, guid: 31ea82ce385fb4842a9355164a45eeb9,
     type: 3}
-  timeBetweenSpawns: 0.5
-  numberOfPerson: 10
+  timeBetweenSpawns: 1
+  numberOfPerson: 5
   pMoveSpeed: 2
