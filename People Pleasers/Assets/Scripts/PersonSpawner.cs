@@ -8,14 +8,14 @@ public class PersonSpawner : MonoBehaviour
     public List<WaveInterface> waveInterfaces;
     private int startingWave = 0;
 
-    private Button spawnButton;
-    private Text spawnNumberIndicator;
+    public Button spawnButton;
+    public Text spawnNumberIndicator;
     // Start is called before the first frame update
     public void Start()
     {
         // StartCoroutine(SpawnAllWaves());
-        spawnButton = GameObject.Find("SpawnButton").GetComponent<Button>();
-        spawnNumberIndicator = GameObject.Find("Path1Indicator").GetComponent<Text>();
+        //spawnButton = GameObject.Find("SpawnButton").GetComponent<Button>();
+        //spawnNumberIndicator = GameObject.Find("Path1Indicator").GetComponent<Text>();
         SpawnButtonIndicator();
         spawnNumberIndicator.text = "X" + waveInterfaces[0].GetNumberOfPerson();
     }
