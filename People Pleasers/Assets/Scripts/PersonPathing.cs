@@ -13,6 +13,7 @@ public class PersonPathing : MonoBehaviour
     {
         waypoints = waveInterface.GetWaypoint();
         transform.position = waypoints[waypointIndex].transform.position;
+        Debug.Log("theGameObj" + waveInterface.GetPerson()[0].name);
     }
 
     // Update is called once per frame
