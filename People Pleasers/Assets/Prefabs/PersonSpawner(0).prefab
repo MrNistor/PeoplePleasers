@@ -47,3 +47,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f7cec592528daea49b25291db5de706f, type: 2}
   spawnButton: {fileID: 0}
   spawnNumberIndicator: {fileID: 0}
+  timeAutomaticClick: 20

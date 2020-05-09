@@ -10,30 +10,56 @@ public class PersonSpawner : MonoBehaviour
 
     public Button spawnButton;
     public Text spawnNumberIndicator;
+    
+    public float timeAutomaticClick = 20.0f;
+    private float maxFillAmount = 1.0f;
+
+    private Coroutine coroutineForBtnNotClicked;
     // Start is called before the first frame update
     public void Start()
     {
-        // StartCoroutine(SpawnAllWaves());
-        //spawnButton = GameObject.Find("SpawnButton").GetComponent<Button>();
-        //spawnNumberIndicator = GameObject.Find("Path1Indicator").GetComponent<Text>();
+        coroutineForBtnNotClicked = StartCoroutine(AutomaticClick());
+        spawnButton.GetComponent<Image>().fillAmount = maxFillAmount;
         SpawnButtonIndicator();
         spawnNumberIndicator.text = "X" + waveInterfaces[0].GetNumberOfPerson();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        AutomaticStartIndicator();
     }
     
+    // create a method that if the btn is not click
+    // in certain amount of time it will get click automatically
+    private IEnumerator AutomaticClick()
+    {
+        yield return new WaitForSeconds(timeAutomaticClick);
+        spawnButton.onClick.Invoke();
+        spawnButton.gameObject.SetActive(false);  
+    }
+
+    private void AutomaticStartIndicator()
+    {
+        // fill amout is one
+        var decreaseAmount = maxFillAmount / timeAutomaticClick;      
+        spawnButton.GetComponent<Image>().fillAmount -= decreaseAmount * Time.deltaTime;
+        if (spawnButton.GetComponent<Image>().fillAmount == 0)
+        {
+            spawnButton.gameObject.SetActive(false);  
+        }
+    }
+
     public void StartCoroutine()
     {
         StartCoroutine(SpawnAllWaves());
         // I have to enable the button after the method above is called
-        spawnButton.enabled = false;
         ButtonClicked();
+        spawnButton.enabled = false;
+        StopCoroutine(coroutineForBtnNotClicked);
     }
-    
+
     private void ButtonClicked()
     {
         spawnButton.gameObject.SetActive(false);
@@ -60,26 +86,18 @@ public class PersonSpawner : MonoBehaviour
         }
         else
         {
-            Debug.Log("humm");
+            //Debug.Log("humm");
         }
     }
-
-
 
     private IEnumerator SpawnAllWaves()
     {
         for (var curWave = startingWave; curWave < waveInterfaces.Count; curWave++)
         {
             var current = waveInterfaces[curWave];
-            // for distinguish
-            // DistinguishPerson(current);
-
             yield return StartCoroutine(SpawnAllEnemiesByWave(current));
-            
         }
     }
-
-    
 
     private IEnumerator SpawnAllEnemiesByWave(WaveInterface _waveInterface)
     {
@@ -89,6 +107,7 @@ public class PersonSpawner : MonoBehaviour
             yield return new WaitForSeconds(_waveInterface.GetTimeBetweenSpawns());
         }
     }
+
     private void GeneratePerson(WaveInterface _waveInterface)
     {
         int generateRandomPerson = 0;
