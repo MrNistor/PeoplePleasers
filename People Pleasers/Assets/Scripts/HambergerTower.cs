@@ -32,7 +32,7 @@ public class HambergerTower : MonoBehaviour
         else
         {
             //hasDected = false;
-            Debug.Log("has Dected: " + hasDected);
+            //Debug.Log("has Dected: " + hasDected);
         }
     }
 
@@ -48,7 +48,7 @@ public class HambergerTower : MonoBehaviour
         else
         {
             //hasDected = false;
-            Debug.Log("has Dected: " + hasDected);
+            //Debug.Log("has Dected: " + hasDected);
         }
     }
 
@@ -56,7 +56,7 @@ public class HambergerTower : MonoBehaviour
     {
         //Debug.Log("Exited");
         detectNumberInRange--;
-        Debug.Log("Exited After Got out: " + detectNumberInRange);
+        //Debug.Log("Exited After Got out: " + detectNumberInRange);
     }
 
 }

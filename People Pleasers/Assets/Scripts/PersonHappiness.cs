@@ -46,7 +46,7 @@ public class PersonHappiness : MonoBehaviour
         else
         {
             happinessBar.value += restoreAmount * Time.fixedDeltaTime;
-            Debug.Log(restoreAmount);
+            //Debug.Log(restoreAmount);
 
         }
         
