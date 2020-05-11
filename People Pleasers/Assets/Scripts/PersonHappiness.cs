@@ -7,7 +7,7 @@ public class PersonHappiness : MonoBehaviour
 {
     private float maxHappiness = 1.0f;
     public Slider happinessBar;
-    public float happyDecreaseAmount = 0.08f;
+    public float happyDecreaseAmount = 0.11f;
     private SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
@@ -36,4 +36,19 @@ public class PersonHappiness : MonoBehaviour
         }
     }
 
+    // method that is being used in HambergerTower
+    public void RestoreHappiness(float restoreAmount)
+    {
+        if (happinessBar.value == 0)
+        {
+            //...
+        }
+        else
+        {
+            happinessBar.value += restoreAmount * Time.fixedDeltaTime;
+            Debug.Log(restoreAmount);
+
+        }
+        
+    }
 }
