@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TowerPlacer : MonoBehaviour
 {
+    public TowerCreater towerCreater;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +16,15 @@ public class TowerPlacer : MonoBehaviour
     {
         
     }
-    private void OnMouseOver()
+    
+    private void OnMouseDown()
     {
-        Debug.Log("Hello");
+        //Instantiate(TowerCreater.Instance.)
+        Debug.Log("Tower Down!");
+        PlaceTower();
+    }
+    private void PlaceTower()
+    {
+        Instantiate(towerCreater.GetTowerPrefab(), transform.position, Quaternion.identity);
     }
 }
