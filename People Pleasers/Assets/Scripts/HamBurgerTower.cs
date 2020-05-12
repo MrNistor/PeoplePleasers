@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BurgerTower : MonoBehaviour
+public class HambergerTower : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float coolDown = 1;
     public float cooldownTimer;
 
     public float maxDistirubtionPower = 0.3f;
     private bool hasDected = false;
     private int detectNumberInRange = 0;
-
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -59,4 +58,5 @@ public class BurgerTower : MonoBehaviour
         detectNumberInRange--;
         //Debug.Log("Exited After Got out: " + detectNumberInRange);
     }
+
 }
