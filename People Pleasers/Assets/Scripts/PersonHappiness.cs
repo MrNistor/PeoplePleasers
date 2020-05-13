@@ -9,11 +9,14 @@ public class PersonHappiness : MonoBehaviour
     public Slider happinessBar;
     public float happyDecreaseAmount = 0.11f;
     private SpriteRenderer spriteRenderer;
+
+    // testing on store happiness values
+    // private List<float> happinessStorer;
     // Start is called before the first frame update
     void Start()
     {
         happinessBar.value = maxHappiness;
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); 
     }
 
     // Update is called once per frame
@@ -47,8 +50,11 @@ public class PersonHappiness : MonoBehaviour
         {
             happinessBar.value += restoreAmount * Time.fixedDeltaTime;
             //Debug.Log(restoreAmount);
-
         }
-        
+    }
+    // testing on store happiness value
+    public float GetHappinessValue()
+    {
+        return happinessBar.value;
     }
 }

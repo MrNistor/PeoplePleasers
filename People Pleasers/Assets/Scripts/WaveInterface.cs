@@ -13,6 +13,8 @@ public class WaveInterface : ScriptableObject
     public int numberOfPerson = 10;
     public float pMoveSpeed = 2f;
 
+    //private List<float> storeList
+
     public List<Transform> GetWaypoint()
     {
         var myListWaypoint = new List<Transform>();
@@ -53,4 +55,5 @@ public class WaveInterface : ScriptableObject
         return pMoveSpeed;
     }
     
+     
 }

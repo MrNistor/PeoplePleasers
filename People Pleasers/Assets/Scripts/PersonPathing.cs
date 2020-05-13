@@ -7,13 +7,22 @@ public class PersonPathing : MonoBehaviour
     WaveInterface waveInterface;
     List<Transform> waypoints;
     int waypointIndex = 0;
-    
+
+    // testing on store happiness values
+    private List<float> happinessStorer;
+    PersonHappiness _personHappiness;
+    // testing on store happiness value
     // Start is called before the first frame update
     void Start()
     {
         waypoints = waveInterface.GetWaypoint();
         transform.position = waypoints[waypointIndex].transform.position;
         Debug.Log("theGameObj" + waveInterface.GetPerson()[0].name);
+
+        // testing on store happiness values
+        happinessStorer = new List<float>();
+        _personHappiness = GetComponent<PersonHappiness>();
+        // testing on store happiness value
     }
 
     // Update is called once per frame
@@ -45,6 +54,11 @@ public class PersonPathing : MonoBehaviour
         {
             //Reached at the end
             Debug.Log("Reached End");
+            // testing on store happiness value
+            happinessStorer.Add(_personHappiness.GetHappinessValue());
+            Debug.Log(happinessStorer[0]);
+            // testing on store happiness value
+
             // for now just destroy
             DestroyGameObj();
         }
@@ -54,4 +68,10 @@ public class PersonPathing : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    // testing on store happiness value
+    public List<float> GetHappinessValue()
+    {
+        return happinessStorer;
+    }
+    // testing on store happiness value
 }
