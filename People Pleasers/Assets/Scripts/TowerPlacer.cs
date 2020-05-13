@@ -16,15 +16,49 @@ public class TowerPlacer : MonoBehaviour
     {
         
     }
-    
+    private void OnMouseOver()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            PlaceTower(0);
+        }
+        else if (Input.GetKeyDown(KeyCode.W))
+        {
+            PlaceTower(1);
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            PlaceTower(2);
+        }
+        else if (Input.GetKeyDown(KeyCode.R))
+        {
+            PlaceTower(3);
+        }
+        else
+        {
+            Debug.Log("?");
+        }
+    }
     private void OnMouseDown()
     {
-        //Instantiate(TowerCreater.Instance.)
-        Debug.Log("Tower Down!");
-        PlaceTower();
+        
     }
-    private void PlaceTower()
+
+    /// <summary>
+    /// Place the tower and make sure player cannot place the tower again 
+    /// On the same place
+    /// </summary>
+    /// <param name="towerNumber"></param>
+    private void PlaceTower(int towerNumber)
     {
-        Instantiate(towerCreater.GetTowerPrefab(), transform.position, Quaternion.identity);
+        if (transform.childCount == 0)
+        {
+            GameObject tower = (GameObject)Instantiate(towerCreater.GetTowerPrefab()[towerNumber], transform.position, Quaternion.identity);
+            tower.transform.SetParent(transform);
+        }
+        else
+        {
+            Debug.Log("Tower is already placed on that tile");
+        }
     }
 }
