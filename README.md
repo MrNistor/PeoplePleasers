@@ -30,6 +30,7 @@ Development Log
   - Completed initial win and lose screens [Leighlyn]
   - Completed initial towers implementation [Nick]
   - Issue: towers not working to replenish happiness meter, fixed by renaming tower script [Jun]
+  - Working on increasing score and determining end of level by counting people for win/lose condition [Leighlyn]
 - May 14, 2020:
 
   
