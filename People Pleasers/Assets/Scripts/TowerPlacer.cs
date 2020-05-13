@@ -18,6 +18,28 @@ public class TowerPlacer : MonoBehaviour
         
     }
 
+    private void OnMouseDown()
+    {
+        var selectTowerIndex = RetrieveTower();
+        switch (selectTowerIndex)
+        {
+            case 0:
+                PlaceTower(selectTowerIndex);
+                break;
+            case 1:
+                PlaceTower(selectTowerIndex);
+                break;
+            case 2:
+                PlaceTower(selectTowerIndex);
+                break;
+            case 3:
+                PlaceTower(selectTowerIndex);
+                break;
+            default:
+                break;
+        }
+    }
+
     /// <summary>
     /// Place the tower and make sure player cannot place the tower again 
     /// On the same place
