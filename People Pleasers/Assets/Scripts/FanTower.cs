@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HambergerTower : MonoBehaviour
+public class FanTower : MonoBehaviour
 {
     public float coolDown = 1;
     public float cooldownTimer;
@@ -10,21 +10,14 @@ public class HambergerTower : MonoBehaviour
     public float maxDistirubtionPower = 0.3f;
     private bool hasDected = false;
     private int detectNumberInRange = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
+    /// <summary>
+    /// Increase number of count Hot person enter to tower
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name.Contains("Hungry"))
+        if (other.gameObject.name.Contains("Hot"))
         {
             hasDected = true;
             detectNumberInRange++;
@@ -36,9 +29,13 @@ public class HambergerTower : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Calculate happiness distribution based on the number in tower range 
+    /// </summary>
+    /// <param name="other"></param>
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.name.Contains("Hungry"))
+        if (other.gameObject.name.Contains("Hot"))
         {
             var happinessMeter = other.GetComponent<PersonHappiness>();
             var calculateDistribution = maxDistirubtionPower / detectNumberInRange;
@@ -52,11 +49,14 @@ public class HambergerTower : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Decrease the number of Hot person when it leave the tower
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerExit2D(Collider2D collision)
     {
         //Debug.Log("Exited");
         detectNumberInRange--;
         //Debug.Log("Exited After Got out: " + detectNumberInRange);
     }
-
 }

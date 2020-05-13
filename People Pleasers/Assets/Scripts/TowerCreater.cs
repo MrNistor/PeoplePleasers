@@ -8,8 +8,14 @@ public class TowerCreater : ScriptableObject
     public GameObject towerPrefab;
 
     
-    public GameObject GetTowerPrefab()
+    public List<GameObject> GetTowerPrefab()
     {
-        return towerPrefab;
+        var towers = new List<GameObject>();
+        foreach(Transform tower in towerPrefab.transform)
+        {
+            towers.Add(tower.gameObject);
+        }
+        return towers;
     }
+
 }
