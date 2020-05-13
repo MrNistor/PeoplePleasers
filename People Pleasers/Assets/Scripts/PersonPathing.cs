@@ -8,6 +8,9 @@ public class PersonPathing : MonoBehaviour
     List<Transform> waypoints;
     int waypointIndex = 0;
 
+    public ScoreManager scoreManager;  // used to get variables from GameManager
+    private double scoringHappinessPercent;  // happiness percent required to earn a point
+
     // testing on store happiness values
     private List<float> happinessStorer;
     PersonHappiness _personHappiness;
@@ -15,6 +18,9 @@ public class PersonPathing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scoreManager = GameObject.Find("GameManager").GetComponent<ScoreManager>();
+        scoringHappinessPercent = scoreManager.happinessPercent;
+
         waypoints = waveInterface.GetWaypoint();
         transform.position = waypoints[waypointIndex].transform.position;
         Debug.Log("theGameObj" + waveInterface.GetPerson()[0].name);
@@ -58,6 +64,11 @@ public class PersonPathing : MonoBehaviour
             happinessStorer.Add(_personHappiness.GetHappinessValue());
             Debug.Log(happinessStorer[0]);
             // testing on store happiness value
+
+            // update number of people who reached exit
+            scoreManager.peopleCount++;
+            if (happinessStorer[0] >= scoringHappinessPercent)
+                scoreManager.score++;
 
             // for now just destroy
             DestroyGameObj();

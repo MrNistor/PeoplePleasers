@@ -3336,7 +3336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1590, y: 311}
+  m_AnchoredPosition: {x: 1590, y: -20}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &575995349
@@ -3495,7 +3495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1495, y: 311}
+  m_AnchoredPosition: {x: 1495, y: -20}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &667757689
@@ -3654,7 +3654,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1690, y: 311}
+  m_AnchoredPosition: {x: 1690, y: -20}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &808711000
@@ -4242,7 +4242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1390, y: 311}
+  m_AnchoredPosition: {x: 1390, y: -20}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1076630368
@@ -5331,7 +5331,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Score: 10'
+  m_Text: 'Score: 0'
 --- !u!222 &1698779677
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5766,13 +5766,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2c7606062128b4c9adfb9ebc892e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 10
+  score: 0
   winningScore: 5
   peopleCount: 0
   totalPeople: 8
   winScreen: {fileID: 823820535}
   loseScreen: {fileID: 1265117794}
   scoreBoard: {fileID: 1698779674}
+  happinessPercent: 0.5
 --- !u!4 &2019233587
 Transform:
   m_ObjectHideFlags: 0
