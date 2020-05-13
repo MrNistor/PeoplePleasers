@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BurgerTower : MonoBehaviour
+public class EntertainTower : MonoBehaviour
 {
-    // Start is called before the first frame update
     public float coolDown = 1;
     public float cooldownTimer;
 
@@ -14,7 +13,7 @@ public class BurgerTower : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name.Contains("Hungry"))
+        if (other.gameObject.name.Contains("Bored"))
         {
             hasDected = true;
             detectNumberInRange++;
@@ -28,7 +27,7 @@ public class BurgerTower : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.name.Contains("Hungry"))
+        if (other.gameObject.name.Contains("Bored"))
         {
             var happinessMeter = other.GetComponent<PersonHappiness>();
             var calculateDistribution = maxDistirubtionPower / detectNumberInRange;

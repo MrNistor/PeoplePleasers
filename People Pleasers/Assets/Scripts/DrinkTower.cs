@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BurgerTower : MonoBehaviour
+public class DrinkTower : MonoBehaviour
 {
     // Start is called before the first frame update
     public float coolDown = 1;
@@ -14,7 +14,7 @@ public class BurgerTower : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name.Contains("Hungry"))
+        if (other.gameObject.name.Contains("Thirsty"))
         {
             hasDected = true;
             detectNumberInRange++;
@@ -28,7 +28,7 @@ public class BurgerTower : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.name.Contains("Hungry"))
+        if (other.gameObject.name.Contains("Thirsty"))
         {
             var happinessMeter = other.GetComponent<PersonHappiness>();
             var calculateDistribution = maxDistirubtionPower / detectNumberInRange;
