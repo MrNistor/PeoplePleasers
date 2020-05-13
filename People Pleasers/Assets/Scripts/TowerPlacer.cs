@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class TowerPlacer : MonoBehaviour
 {
@@ -16,15 +17,48 @@ public class TowerPlacer : MonoBehaviour
     {
         
     }
-    
-    private void OnMouseDown()
+
+    /// <summary>
+    /// Place the tower and make sure player cannot place the tower again 
+    /// On the same place
+    /// </summary>
+    /// <param name="towerNumber"></param>
+    private void PlaceTower(int towerNumber)
     {
-        //Instantiate(TowerCreater.Instance.)
-        Debug.Log("Tower Down!");
-        PlaceTower();
+        if (transform.childCount == 0)
+        {
+            GameObject tower = Instantiate(towerCreater.GetTowerPrefab()[towerNumber], transform.position, Quaternion.identity) as GameObject;
+            tower.transform.SetParent(transform);
+        }
+        else
+        {
+            Debug.Log("Tower is already placed on that tile");
+        }
     }
-    private void PlaceTower()
+
+    /// <summary>
+    /// Retrieve tower index number from TowerCreater scriptable object
+    /// </summary>
+    /// <returns></returns>
+    private int RetrieveTower()
     {
-        Instantiate(towerCreater.GetTowerPrefab(), transform.position, Quaternion.identity);
+        var towerIndexNum = towerCreater.GetSelectedTower();
+        try
+        {
+            if (towerIndexNum == -1)
+            {
+                return -1;
+            }
+            else
+            {
+                Debug.Log("From Tower Placer: " + towerIndexNum);
+                return towerIndexNum;
+            }
+        }
+        catch (NullReferenceException e)
+        {
+            Debug.Log("Reference Exception: " + e);
+        }
+        return towerIndexNum;
     }
 }
