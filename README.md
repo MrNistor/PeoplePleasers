@@ -32,6 +32,7 @@ Development Log
   - Issue: towers not working to replenish happiness meter, fixed by renaming tower script [Jun]
   - Working on increasing score and determining end of level by counting people for win/lose condition [Leighlyn]
 - May 14, 2020:
+  - Implemented button to place the tower and place the tower into tile (for tower place) [Jun]
 
   
   
