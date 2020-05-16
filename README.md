@@ -31,9 +31,18 @@ Development Log
   - Completed initial towers implementation [Nick]
   - Issue: towers not working to replenish happiness meter, fixed by renaming tower script [Jun]
   - Working on increasing score and determining end of level by counting people for win/lose condition [Leighlyn]
+  - Working on upgrade shop UI [Angie]
+  - Working on tower button/placement [Jun]
 - May 14, 2020:
-  - Implemented button to place the tower and place the tower into tile (for tower place) [Jun]
-  - Implemented Money decrease each time user place tower and shake money image when money is not enough [Jun]
-
+  - Completed button to place the tower and place the tower into tile (for tower place) [Jun]
+  - Completed win/lose condition detected at end of level [Leighlyn]
+  - Completed upgrade shop UI [Angie]
+  - Working on Money decrease each time user place tower and shake money image when money is not enough [Jun]
+  - Issue: Tower rate of happiness meter increase affected by people of not same type
+- May 18, 2020:
+  - Issue fixed: Tower rate of happiness meter increase only affected by people of same type [Jun]
+  - Issue: Tower occasionally decreases person's happiness meter, fixed by adding check on OnTriggerExit() [Leighlyn]
+  - Completed adding Retry level button on Win Screen [Leighlyn]
+  - Completed Money decrease each time user place tower and shake money image when money is not enough [Jun]
   
   
