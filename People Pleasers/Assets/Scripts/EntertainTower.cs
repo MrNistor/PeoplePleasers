@@ -44,7 +44,8 @@ public class EntertainTower : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         //Debug.Log("Exited");
-        detectNumberInRange--;
+        if (collision.gameObject.name.Contains("Bored"))
+            detectNumberInRange--;
         //Debug.Log("Exited After Got out: " + detectNumberInRange);
     }
 }
