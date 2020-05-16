@@ -33,6 +33,7 @@ Development Log
   - Working on increasing score and determining end of level by counting people for win/lose condition [Leighlyn]
 - May 14, 2020:
   - Implemented button to place the tower and place the tower into tile (for tower place) [Jun]
+  - Implemented Money decrease each time user place tower and shake money image when money is not enough [Jun]
 
   
   
