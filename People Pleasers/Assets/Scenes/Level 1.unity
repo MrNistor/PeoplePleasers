@@ -3757,6 +3757,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001263803}
   m_CullTransparentMesh: 0
+--- !u!1 &1041517981 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8485701824484267071, guid: bdbb1ad8a71678c4ca0a33b23ad46423,
+    type: 3}
+  m_PrefabInstance: {fileID: 8485701825334302781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1127170085
 GameObject:
   m_ObjectHideFlags: 0
@@ -4666,6 +4672,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1827086055}
     m_Modifications:
+    - target: {fileID: 7625037588426363892, guid: f001be1008a394c479b007fd7a5e4320,
+        type: 3}
+      propertyPath: towerBtn
+      value: 
+      objectReference: {fileID: 1041517981}
     - target: {fileID: 7625037588426363894, guid: f001be1008a394c479b007fd7a5e4320,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6060,7 +6071,7 @@ PrefabInstance:
     - target: {fileID: 8485701825911853742, guid: bdbb1ad8a71678c4ca0a33b23ad46423,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -46.200012
+      value: -46.19995
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdbb1ad8a71678c4ca0a33b23ad46423, type: 3}

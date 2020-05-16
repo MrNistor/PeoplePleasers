@@ -6,6 +6,7 @@ using System;
 public class TowerPlacer : MonoBehaviour
 {
     public TowerCreater towerCreater;
+    //private GameObject towerBtn;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,16 +65,21 @@ public class TowerPlacer : MonoBehaviour
     /// <returns></returns>
     private int RetrieveTower()
     {
+        
         var towerIndexNum = towerCreater.GetSelectedTower();
+        var towerBtnClicked = towerCreater.GetIsTowerBtnClicked();
+        Debug.Log(towerBtnClicked);
+        Debug.Log(towerIndexNum);
         try
         {
-            if (towerIndexNum == -1)
+            if (towerIndexNum == -1 || towerBtnClicked == false)
             {
                 return -1;
             }
             else
             {
                 Debug.Log("From Tower Placer: " + towerIndexNum);
+                towerCreater.SetIsTowerBtnClicked(false);
                 return towerIndexNum;
             }
         }

@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class TowerBtnColor : MonoBehaviour
 {
     private Image _image;
+    private bool isTowerBtnClicked;
     // Start is called before the first frame update
     void Start()
     {
         _image = GetComponent<Image>();
+        isTowerBtnClicked = false;
     }
 
     // Update is called once per frame
@@ -17,14 +19,28 @@ public class TowerBtnColor : MonoBehaviour
     {
 
     }
+
     private void OnMouseEnter()
     {
         ChangeColor();
     }
+
     private void OnMouseExit()
     {
         _image.color = Color.white;
     }
+
+    private void OnMouseDown()
+    {
+        isTowerBtnClicked = true;
+        Debug.Log(GetisTowerBtnClicked());
+    }
+
+    public bool GetisTowerBtnClicked()
+    {
+        return isTowerBtnClicked;
+    }
+
     private void ChangeColor()
     {
         if (gameObject.name.Contains("Burger"))
