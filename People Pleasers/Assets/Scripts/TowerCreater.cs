@@ -7,13 +7,10 @@ using UnityEngine.UI;
 public class TowerCreater : ScriptableObject
 {
     public GameObject towerPrefab;
-    // May 15
     public float towerPrice = 25.5f;
     private bool isTowerClicked = false;
-    // End of May 15
     private int selected = -1;
     
-
     public List<GameObject> GetTowerPrefab()
     {
         var towers = new List<GameObject>();
@@ -58,18 +55,14 @@ public class TowerCreater : ScriptableObject
         return selected;
     }
 
-    // may 15 
     public bool GetIsTowerBtnClicked()
     {
         return isTowerClicked;
     }
+
     public void SetIsTowerBtnClicked(bool _isClicked)
     {
         isTowerClicked = _isClicked;
     }
-    // may 15
-    public float BuyTower()
-    {
-        return towerPrice;
-    }
+
 }

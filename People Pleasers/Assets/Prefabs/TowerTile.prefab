@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   towerCreater: {fileID: 11400000, guid: 6cc52cb7cc0f7dc4bab2f1a3d6c66b4f, type: 2}
+  moneyObj: {fileID: 0}
 --- !u!212 &4710302666554607435
 SpriteRenderer:
   m_ObjectHideFlags: 0

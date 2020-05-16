@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 
 public class TowerPlacer : MonoBehaviour
 {
     public TowerCreater towerCreater;
-    //private GameObject towerBtn;
+    // for money
+    public GameObject moneyObj;
+    private float towerPrice = 80f;
+    private float currentMoney;
+    // for text
+    private float speed = 1.0f;
+    private float amount = 1.0f;
+    private float shakeRange = 20.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +25,36 @@ public class TowerPlacer : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void UpdateMoneyText()
+    {
+        moneyObj.GetComponent<Text>().text = currentMoney.ToString();
+    }
+
+    private void ReadCurrentMoney()
+    {
+        var currencyText = moneyObj.GetComponent<Text>().text;
+        float currency = float.Parse(currencyText);
+        
+        Debug.Log(currency);
+        currentMoney = currency;
+    }
+    
+    private IEnumerator MoneyIconShake()
+    {
+        float elpased = 0.0f;
+        Quaternion orginalPos = moneyObj.transform.rotation;
+
+        while (elpased < amount)
+        {
+            elpased += Time.deltaTime;
+            float z = UnityEngine.Random.value * shakeRange - (shakeRange / 2);
+            moneyObj.transform.eulerAngles = new Vector3(orginalPos.x, orginalPos.y, orginalPos.z + z);
+
+            yield return null;
+        }
+        moneyObj.transform.rotation = orginalPos;
     }
 
     private void OnMouseDown()
@@ -48,8 +86,22 @@ public class TowerPlacer : MonoBehaviour
     /// <param name="towerNumber"></param>
     private void PlaceTower(int towerNumber)
     {
+        ReadCurrentMoney();
+        Debug.Log(currentMoney);
         if (transform.childCount == 0)
         {
+            if (currentMoney < towerPrice)
+            {
+                Debug.Log("Not Enough Money");
+                StartCoroutine(MoneyIconShake());
+                return;
+            }
+            else
+            {
+                currentMoney -= towerPrice;
+                UpdateMoneyText();
+            }
+
             GameObject tower = Instantiate(towerCreater.GetTowerPrefab()[towerNumber], transform.position, Quaternion.identity) as GameObject;
             tower.transform.SetParent(transform);
         }
