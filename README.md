@@ -1,4 +1,4 @@
-# PeoplePleasers
+ # PeoplePleasers
 The final project called "People Pleasers" for CSS 385
 
 ----------------------------
@@ -39,10 +39,11 @@ Development Log
   - Completed upgrade shop UI [Angie]
   - Working on Money decrease each time user place tower and shake money image when money is not enough [Jun]
   - Issue: Tower rate of happiness meter increase affected by people of not same type
-- May 18, 2020:
+- May 17, 2020:
   - Issue fixed: Tower rate of happiness meter increase only affected by people of same type [Jun]
   - Issue: Tower occasionally decreases person's happiness meter, fixed by adding check on OnTriggerExit() [Leighlyn]
   - Completed adding Retry level button on Win Screen [Leighlyn]
   - Completed Money decrease each time user place tower and shake money image when money is not enough [Jun]
+  - Removed the upgrade chest from UI [Angie]
   
   
