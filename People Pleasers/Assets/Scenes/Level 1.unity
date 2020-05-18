@@ -2679,6 +2679,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 44b608ada2b2fe04d8c9c5f30741e5b1, type: 2}
   - m_RefCount: 62
     m_Data: {fileID: 11400000, guid: 6b3f352b1aa353a45bdde2d1cf43b1be, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -2686,6 +2688,8 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: d679d5e2b6d941c418405d39fb38eb7b, type: 3}
   - m_RefCount: 62
     m_Data: {fileID: 21300000, guid: 7830e8493265476448b74e2e4551e0a8, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 189
     m_Data:
@@ -2710,8 +2714,8 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -9, y: -6, z: 0}
-  m_Size: {x: 18, y: 12, z: 1}
+  m_Origin: {x: -11, y: -6, z: 0}
+  m_Size: {x: 20, y: 12, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -6121,6 +6125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -46.100098
+      objectReference: {fileID: 0}
+    - target: {fileID: 8485701825023799211, guid: bdbb1ad8a71678c4ca0a33b23ad46423,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8485701825670143822, guid: bdbb1ad8a71678c4ca0a33b23ad46423,
         type: 3}
