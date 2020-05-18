@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PersonPathing : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class PersonPathing : MonoBehaviour
     public ScoreManager scoreManager;  // used to get variables from GameManager
     private double scoringHappinessPercent;  // happiness percent required to earn a point
 
+    private Text moneyAmount;  // required to update the money
+    private int moneyAmountValue = 0;
+    private int moneyIncrease = 10;
+
     // testing on store happiness values
     private List<float> happinessStorer;
     PersonHappiness _personHappiness;
@@ -20,6 +25,8 @@ public class PersonPathing : MonoBehaviour
     {
         scoreManager = GameObject.Find("GameManager").GetComponent<ScoreManager>();
         scoringHappinessPercent = scoreManager.happinessPercent;
+
+        moneyAmount = GameObject.Find("Money").GetComponent<Text>();
 
         waypoints = waveInterface.GetWaypoint();
         transform.position = waypoints[waypointIndex].transform.position;
@@ -68,7 +75,15 @@ public class PersonPathing : MonoBehaviour
             // update number of people who reached exit
             scoreManager.peopleCount++;
             if (happinessStorer[0] >= scoringHappinessPercent)
+            {
                 scoreManager.score++;
+            }
+            if (happinessStorer[0] > 0)
+            {
+                int.TryParse(moneyAmount.text, out moneyAmountValue);
+                moneyAmountValue += moneyIncrease;
+                moneyAmount.text = moneyAmountValue.ToString();
+            }
 
             // for now just destroy
             DestroyGameObj();

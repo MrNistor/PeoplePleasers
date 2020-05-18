@@ -10,7 +10,7 @@ public class TowerPlacer : MonoBehaviour
     // for money
     public GameObject moneyObj;
     private float towerPrice = 80f;
-    private float currentMoney;
+    public float currentMoney;
     // for text
     private float speed = 1.0f;
     private float amount = 1.0f;
@@ -27,7 +27,7 @@ public class TowerPlacer : MonoBehaviour
         
     }
 
-    private void UpdateMoneyText()
+    public void UpdateMoneyText()
     {
         moneyObj.GetComponent<Text>().text = currentMoney.ToString();
     }
