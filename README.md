@@ -45,5 +45,5 @@ Development Log
   - Completed adding Retry level button on Win Screen [Leighlyn]
   - Completed Money decrease each time user place tower and shake money image when money is not enough [Jun]
   - Removed the upgrade chest from UI [Angie]
-  
+  - Completed increasing money when person reaches exit with happiness meter > 0 [Leighlyn]
   
