@@ -28,7 +28,7 @@ public class ScoreManager : MonoBehaviour
             peopleCount = totalPeople;
         // -----------------------------------------
 
-        scoreBoard.GetComponent<Text>().text = "Score: " + score.ToString();  // update score board
+        scoreBoard.GetComponent<Text>().text = "Score: " + score.ToString() + "/" + winningScore;  // update score board
         // check if level has ended
         if (peopleCount >= totalPeople)
         {
