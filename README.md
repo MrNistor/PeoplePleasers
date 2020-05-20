@@ -53,4 +53,5 @@ Development Log
   - Working on tutorial for playtest session [Leighlyn]
 - May 21, 2020
   - Completed WebGL test build [Alex]
+  - Completed fixing happiness meter decrease according to person speed and same color as person type [Leighlyn]
   
