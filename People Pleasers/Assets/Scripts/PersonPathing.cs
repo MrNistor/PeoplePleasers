@@ -16,6 +16,8 @@ public class PersonPathing : MonoBehaviour
     private int moneyAmountValue = 0;
     private int moneyIncrease = 10;
 
+    public float personSpeed;
+
     // testing on store happiness values
     private List<float> happinessStorer;
     PersonHappiness _personHappiness;
@@ -55,8 +57,9 @@ public class PersonPathing : MonoBehaviour
         if (waypointIndex <= waypoints.Count - 1)
         {
             var targetPos = waypoints[waypointIndex].transform.position;
-            var personSpeed = waveInterface.GetPersonMoveSpeed() * Time.deltaTime;
+            personSpeed = waveInterface.GetPersonMoveSpeed() * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, targetPos, personSpeed);
+            _personHappiness.happyDecreaseAmount = personSpeed;
 
             if (transform.position == targetPos)
             {

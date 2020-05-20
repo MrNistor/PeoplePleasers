@@ -5120,11 +5120,11 @@ MonoBehaviour:
   score: 0
   winningScore: 5
   peopleCount: 0
-  totalPeople: 8
+  totalPeople: 10
   winScreen: {fileID: 1778152466}
   loseScreen: {fileID: 250739299}
   scoreBoard: {fileID: 349788978}
-  happinessPercent: 0.5
+  happinessPercent: 0.4
 --- !u!4 &1584932678
 Transform:
   m_ObjectHideFlags: 0

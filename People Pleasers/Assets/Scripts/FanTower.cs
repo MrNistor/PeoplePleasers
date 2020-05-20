@@ -18,6 +18,8 @@ public class FanTower : MonoBehaviour
         {
             hasDected = true;
             detectNumberInRange++;
+            var happinessMeter = other.GetComponent<PersonHappiness>();
+            happinessMeter.inTowerRange = true;
         }
         else
         {
@@ -46,7 +48,11 @@ public class FanTower : MonoBehaviour
     {
         //Debug.Log("Exited");
         if (collision.gameObject.name.Contains("Hot"))
+        {
             detectNumberInRange--;
+            var happinessMeter = collision.GetComponent<PersonHappiness>();
+            happinessMeter.inTowerRange = false;
+        }
         //Debug.Log("Exited After Got out: " + detectNumberInRange);
     }
 }

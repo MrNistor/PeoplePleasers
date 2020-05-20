@@ -4984,13 +4984,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  winningScore: 5
+  winningScore: 4
   peopleCount: 0
   totalPeople: 8
   winScreen: {fileID: 823820535}
   loseScreen: {fileID: 1265117794}
   scoreBoard: {fileID: 1698779674}
-  happinessPercent: 0.5
+  happinessPercent: 0.4
 --- !u!4 &2019233587
 Transform:
   m_ObjectHideFlags: 0

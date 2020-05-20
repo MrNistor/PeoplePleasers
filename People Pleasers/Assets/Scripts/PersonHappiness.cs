@@ -8,7 +8,10 @@ public class PersonHappiness : MonoBehaviour
     private float maxHappiness = 1.0f;
     public Slider happinessBar;
     public float happyDecreaseAmount = 0.11f;
+    private float happyDecreaseRate = 0.07f;
     private SpriteRenderer spriteRenderer;
+    public bool inTowerRange = false;
+    
 
     // testing on store happiness values
     // private List<float> happinessStorer;
@@ -22,12 +25,13 @@ public class PersonHappiness : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DecreaseHappiness();
+        if (!inTowerRange)
+            DecreaseHappiness();
     }
 
     private void DecreaseHappiness()
     {
-        happinessBar.value -= happyDecreaseAmount * Time.deltaTime;
+        happinessBar.value -= happyDecreaseAmount * happyDecreaseRate;
         ChangePersonColor();
     }
 
