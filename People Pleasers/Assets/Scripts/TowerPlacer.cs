@@ -10,7 +10,8 @@ public class TowerPlacer : MonoBehaviour
     // for money
     public GameObject moneyObj;
     private float towerPrice = 80f;
-    public float currentMoney;
+    private float currentMoney;
+    //public float currentMoney;    // not sure why made public?
     // for text
     private float speed = 1.0f;
     private float amount = 1.0f;
