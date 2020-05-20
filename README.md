@@ -39,11 +39,18 @@ Development Log
   - Completed upgrade shop UI [Angie]
   - Working on Money decrease each time user place tower and shake money image when money is not enough [Jun]
   - Issue: Tower rate of happiness meter increase affected by people of not same type
-- May 17, 2020:
+  - Working on digital prototypes powerpoint [all team members]
+- May 18, 2020:
   - Issue fixed: Tower rate of happiness meter increase only affected by people of same type [Jun]
   - Issue: Tower occasionally decreases person's happiness meter, fixed by adding check on OnTriggerExit() [Leighlyn]
+  - Completed digital prototype powerpoint presentation [all team members]
   - Completed adding Retry level button on Win Screen [Leighlyn]
   - Completed Money decrease each time user place tower and shake money image when money is not enough [Jun]
   - Removed the upgrade chest from UI [Angie]
   - Completed increasing money when person reaches exit with happiness meter > 0 [Leighlyn]
   - UI now shows the score needed to pass the level [Alex]
+  - Working on WebGL test for sharing [Alex]
+  - Working on tutorial for playtest session [Leighlyn]
+- May 21, 2020
+  - Completed WebGL test build [Alex]
+  
