@@ -78,6 +78,7 @@ public class TowerPlacer : MonoBehaviour
             default:
                 break;
         }
+        
     }
 
     /// <summary>

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BurgerTower : MonoBehaviour
 {
@@ -11,6 +12,18 @@ public class BurgerTower : MonoBehaviour
     public float maxDistirubtionPower = 0.3f;
     private bool hasDected = false;
     private int detectNumberInRange = 0;
+
+    // btn for sell tower
+    //public Button sellBtn;
+    private void Start()
+    {
+        //sellBtn.enabled = false;
+    }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("Do you want to sell?");
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
