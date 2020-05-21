@@ -54,6 +54,7 @@ Development Log
 - May 21, 2020
   - Completed WebGL test build [Alex]
   - Completed fixing happiness meter decrease according to person speed and same color as person type [Leighlyn]
-  - Updated tower spawn prefabs [Jun]
-  - Level2 Spawn other two type people Updated Level2 so it has same functionality with level1. [Jun]
+  - Completed Updated tower spawn prefabs [Jun]
+  - Completed Level2 Spawn other two type people Updated Level2 so it has same functionality with level1. [Jun]
+  - Completed tutorial for level 1 and 2 [Leighlyn]
 
