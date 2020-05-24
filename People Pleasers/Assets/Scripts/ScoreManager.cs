@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     public GameObject winScreen;  // requires winning screen object (make sure it is disabled by default)
     public GameObject loseScreen;  // requires losing screen object (make sure it is disabled by default)
     public GameObject scoreBoard;  // requires SpawnCanvas object with Score component
-    public double happinessPercent = 0.5;  // happiness level required to earn a point
+    public float happinessPercent = 0.4f;  // happiness level required to earn a point
 
     // Start is called before the first frame update
     void Start()

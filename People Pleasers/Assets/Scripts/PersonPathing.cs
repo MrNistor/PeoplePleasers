@@ -10,7 +10,7 @@ public class PersonPathing : MonoBehaviour
     int waypointIndex = 0;
 
     public ScoreManager scoreManager;  // used to get variables from GameManager
-    private double scoringHappinessPercent;  // happiness percent required to earn a point
+    private float scoringHappinessPercent;  // happiness percent required to earn a point
 
     private Text moneyAmount;  // required to update the money
     private int moneyAmountValue = 0;

@@ -7,6 +7,7 @@ public class PersonHappiness : MonoBehaviour
 {
     private float maxHappiness = 1.0f;
     public Slider happinessBar;
+    public Slider happyPointLevel;
     public float happyDecreaseAmount = 0.11f;
     private float happyDecreaseRate = 0.07f;
     private SpriteRenderer spriteRenderer;
@@ -19,6 +20,7 @@ public class PersonHappiness : MonoBehaviour
     void Start()
     {
         happinessBar.value = maxHappiness;
+        happyPointLevel.value = GameObject.Find("GameManager").GetComponent<ScoreManager>().happinessPercent;
         spriteRenderer = GetComponent<SpriteRenderer>(); 
     }
 
