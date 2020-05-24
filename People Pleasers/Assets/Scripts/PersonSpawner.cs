@@ -5,6 +5,9 @@ using UnityEngine.UI; // to access btn with text
 
 public class PersonSpawner : MonoBehaviour
 {   
+    public bool startPersonSpawn = true;
+    private bool hasStarted = false;
+
     public List<WaveInterface> waveInterfaces;
     private int startingWave = 0;
 
@@ -21,6 +24,30 @@ public class PersonSpawner : MonoBehaviour
     private bool turnOffSecondBtn = false;
     // Start is called before the first frame update
     public void Start()
+    {
+        if (GameObject.Find("Tutorial") == null)
+        {
+            StartPersonSpawn();
+            hasStarted = true;
+        }        
+        else
+        {
+            startPersonSpawn = false;
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (startPersonSpawn && !hasStarted)
+        {
+            StartPersonSpawn();
+            hasStarted = true;
+        }
+        AutomaticStartIndicator();
+    }
+    
+    private void StartPersonSpawn()
     {
         coroutineForBtnNotClicked = StartCoroutine(AutomaticClick());
         buttonLength = spawnButton.Length;
@@ -47,16 +74,8 @@ public class PersonSpawner : MonoBehaviour
         {
             spawnNumberIndicator[0].text = "X" + waveInterfaces[0].GetNumberOfPerson();
         }
-        
-        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        AutomaticStartIndicator();
-    }
-    
     // create a method that if the btn is not click
     // in certain amount of time it will get click automatically
     private IEnumerator AutomaticClick()

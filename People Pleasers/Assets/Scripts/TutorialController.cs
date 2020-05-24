@@ -49,6 +49,8 @@ public class TutorialController : MonoBehaviour
                 tutorialButton4.SetActive(false);
                 personSpawner0.SetActive(true);
                 personSpawner1.SetActive(true);
+                personSpawner0.GetComponent<PersonSpawner>().startPersonSpawn = true;
+                personSpawner1.GetComponent<PersonSpawner>().startPersonSpawn = true;
                 personSpawnerButton0.SetActive(true);
                 personSpawnerButton1.SetActive(true);
                 break;
