@@ -111,6 +111,10 @@ public class PersonSpawner : MonoBehaviour
     private void ButtonClicked()
     {
         Debug.Log("I am Button Clicked " + buttonIndexer);
+        Color c = spawnButton[buttonIndexer].gameObject.GetComponent<Image>().color;
+        c.a = 0f;
+        spawnButton[buttonIndexer].gameObject.GetComponent<Image>().color = c;
+        spawnNumberIndicator[buttonIndexer].text = "";
         spawnButton[buttonIndexer].gameObject.SetActive(false);
         spawnButton[buttonIndexer].enabled = false;
         Debug.Log("I am the Button Clicked: " + buttonIndexer + "clicked!");
