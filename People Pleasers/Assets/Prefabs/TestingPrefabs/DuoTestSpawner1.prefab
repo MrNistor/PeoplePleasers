@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6659707372534311960
+--- !u!1 &4334003431014653462
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6659707372534311942}
-  - component: {fileID: 6659707372534311961}
+  - component: {fileID: 4334003431014653461}
+  - component: {fileID: 4334003431014653460}
   m_Layer: 0
-  m_Name: PersonSpawner (1)
+  m_Name: DuoTestSpawner1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6659707372534311942
+--- !u!4 &4334003431014653461
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659707372534311960}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 4334003431014653462}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6659707372534311961
+--- !u!114 &4334003431014653460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6659707372534311960}
+  m_GameObject: {fileID: 4334003431014653462}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e31d339012e557e4392cc8da886bf276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waveInterfaces:
-  - {fileID: 11400000, guid: c23dc16ec3e02f54da7c2a0da6f96605, type: 2}
+  - {fileID: 11400000, guid: 5258cb43711cc324f8c87d8aca53b80d, type: 2}
+  - {fileID: 11400000, guid: 67c1bea2c5c777341a4bdccf0572f240, type: 2}
   spawnButton:
+  - {fileID: 0}
   - {fileID: 0}
   spawnNumberIndicator:
   - {fileID: 0}
-  timeAutomaticClick: 25
+  - {fileID: 0}
+  timeAutomaticClick: 10

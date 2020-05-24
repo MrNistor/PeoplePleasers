@@ -7457,19 +7457,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
-      propertyPath: spawnNumberIndicator.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
-        type: 3}
-      propertyPath: spawnButton
+      propertyPath: spawnButton.Array.data[0]
       value: 
       objectReference: {fileID: 743083019}
-    - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
-        type: 3}
-      propertyPath: spawnNumberIndicator
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
       propertyPath: spawnNumberIndicator.Array.data[0]
@@ -7735,19 +7725,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
         type: 3}
-      propertyPath: spawnNumberIndicator.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
-        type: 3}
-      propertyPath: spawnButton
+      propertyPath: spawnButton.Array.data[0]
       value: 
       objectReference: {fileID: 424398642}
-    - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
-        type: 3}
-      propertyPath: spawnNumberIndicator
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
         type: 3}
       propertyPath: spawnNumberIndicator.Array.data[0]

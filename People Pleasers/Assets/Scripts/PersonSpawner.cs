@@ -8,18 +8,34 @@ public class PersonSpawner : MonoBehaviour
     public List<WaveInterface> waveInterfaces;
     private int startingWave = 0;
 
-    public Button spawnButton;
+    public Button[] spawnButton;
     public Text[] spawnNumberIndicator;
     
     public float timeAutomaticClick = 20.0f;
     private float maxFillAmount = 1.0f;
 
     private Coroutine coroutineForBtnNotClicked;
+    private int buttonLength;
+    // update may24
+    private int buttonIndexer = 0;
+    private bool turnOffSecondBtn = false;
     // Start is called before the first frame update
     public void Start()
     {
         coroutineForBtnNotClicked = StartCoroutine(AutomaticClick());
-        spawnButton.GetComponent<Image>().fillAmount = maxFillAmount;
+        buttonLength = spawnButton.Length;
+        if (buttonLength > 1)
+        {
+            spawnButton[1].gameObject.SetActive(false);
+            spawnButton[1].enabled = false;
+        }
+        else
+        {
+            spawnButton[buttonIndexer].GetComponent<Image>().fillAmount = maxFillAmount;
+        }
+        // update may24
+        //spawnButton.GetComponent<Image>().fillAmount = maxFillAmount;
+        // update may24
         SpawnButtonIndicator();
         // today update may  24
         if (spawnNumberIndicator.Length > 1)
@@ -46,18 +62,27 @@ public class PersonSpawner : MonoBehaviour
     private IEnumerator AutomaticClick()
     {
         yield return new WaitForSeconds(timeAutomaticClick);
-        spawnButton.onClick.Invoke();
-        spawnButton.gameObject.SetActive(false);  
+        Debug.Log("Before Invoke: " + buttonIndexer);
+        spawnButton[buttonIndexer].onClick.Invoke();
+        Debug.Log("After Invoke: " + buttonIndexer);
+        if (buttonIndexer == 1)
+        {
+            spawnButton[0].gameObject.SetActive(false);
+            StartCoroutine(AutomaticClick());
+        }
+        //spawnButton[buttonIndexer].gameObject.SetActive(false);
+        Debug.Log("AutomaticClick: " + buttonIndexer);
     }
 
     private void AutomaticStartIndicator()
     {
         // fill amout is one
-        var decreaseAmount = maxFillAmount / timeAutomaticClick;      
-        spawnButton.GetComponent<Image>().fillAmount -= decreaseAmount * Time.deltaTime;
-        if (spawnButton.GetComponent<Image>().fillAmount == 0)
+        var decreaseAmount = maxFillAmount / timeAutomaticClick;   
+        
+        spawnButton[buttonIndexer].GetComponent<Image>().fillAmount -= decreaseAmount * Time.deltaTime;
+        if (spawnButton[buttonIndexer].GetComponent<Image>().fillAmount == 0)
         {
-            spawnButton.gameObject.SetActive(false);  
+            spawnButton[buttonIndexer].gameObject.SetActive(false);  
         }
     }
 
@@ -66,41 +91,84 @@ public class PersonSpawner : MonoBehaviour
         StartCoroutine(SpawnAllWaves());
         // I have to enable the button after the method above is called
         ButtonClicked();
-        spawnButton.enabled = false;
+        spawnButton[buttonIndexer].enabled = false;
+        if (buttonLength > 1)
+        {
+            buttonIndexer = 1;
+            spawnButton[buttonIndexer].enabled = true;
+            spawnButton[buttonIndexer].gameObject.SetActive(true);
+            SpawnButtonIndicator();
+        }
+        
+        if (turnOffSecondBtn == true)
+        {
+            spawnButton[buttonIndexer].enabled = false;
+            spawnButton[buttonIndexer].gameObject.SetActive(false);
+        }
         StopCoroutine(coroutineForBtnNotClicked);
     }
 
     private void ButtonClicked()
     {
-        spawnButton.gameObject.SetActive(false);
+        Debug.Log("I am Button Clicked " + buttonIndexer);
+        spawnButton[buttonIndexer].gameObject.SetActive(false);
+        spawnButton[buttonIndexer].enabled = false;
+        Debug.Log("I am the Button Clicked: " + buttonIndexer + "clicked!");
+        if (buttonIndexer == 1)
+        {
+            turnOffSecondBtn = true;
+        }
     }
     
     private void SpawnButtonIndicator()
     {
         Debug.Log(waveInterfaces[0].GetPerson()[0]);
-        if (spawnNumberIndicator.Length > 1)
+        if (spawnNumberIndicator.Length > 1 && buttonLength == 1)
         {
 
         }
+        //else if (buttonLength > 1)
+        //{
+        //    if (waveInterfaces[buttonIndexer].GetPerson()[0].name.Contains("Hungry"))
+        //    {
+        //        spawnButton[buttonIndexer].GetComponent<Image>().color = Color.red;
+        //    }
+        //    else if (waveInterfaces[buttonIndexer].GetPerson()[0].name.Contains("Thirsty"))
+        //    {
+        //        spawnButton[buttonIndexer].GetComponent<Image>().color = Color.blue;
+        //    }
+        //    else if (waveInterfaces[buttonIndexer].GetPerson()[0].name.Contains("Hot"))
+        //    {
+        //        spawnButton[buttonIndexer].GetComponent<Image>().color = new Color(255f, 174f, 0);
+        //    }
+        //    else if (waveInterfaces[buttonIndexer].GetPerson()[0].name.Contains("Bored"))
+        //    {
+        //        spawnButton[buttonIndexer].GetComponent<Image>().color = new Color(206f, 0, 255f);
+        //    }
+        //    else
+        //    {
+        //        //Debug.Log("humm");
+        //    }
+        //}
         else
         {
 
 
-            if (waveInterfaces[0].GetPerson()[0].name.Contains("Hungry"))
+            if (waveInterfaces[buttonIndexer].GetPerson()[0].name.Contains("Hungry"))
             {
-                spawnButton.GetComponent<Image>().color = Color.red;
+                spawnButton[buttonIndexer].GetComponent<Image>().color = Color.red;
             }
-            else if (waveInterfaces[0].GetPerson()[0].name.Contains("Thirsty"))
+            else if (waveInterfaces[buttonIndexer].GetPerson()[0].name.Contains("Thirsty"))
             {
-                spawnButton.GetComponent<Image>().color = Color.blue;
+                spawnButton[buttonIndexer].GetComponent<Image>().color = Color.blue;
             }
-            else if (waveInterfaces[0].GetPerson()[0].name.Contains("Hot"))
+            else if (waveInterfaces[buttonIndexer].GetPerson()[0].name.Contains("Hot"))
             {
-                spawnButton.GetComponent<Image>().color = new Color(255f, 174f, 0);
+                spawnButton[buttonIndexer].GetComponent<Image>().color = new Color(255f, 174f, 0);
             }
-            else if (waveInterfaces[0].GetPerson()[0].name.Contains("Bored"))
+            else if (waveInterfaces[buttonIndexer].GetPerson()[0].name.Contains("Bored"))
             {
-                spawnButton.GetComponent<Image>().color = new Color(206f, 0, 255f);
+                spawnButton[buttonIndexer].GetComponent<Image>().color = new Color(206f, 0, 255f);
             }
             else
             {
@@ -112,11 +180,20 @@ public class PersonSpawner : MonoBehaviour
 
     private IEnumerator SpawnAllWaves()
     {
-        for (var curWave = startingWave; curWave < waveInterfaces.Count; curWave++)
+        if (buttonLength > 1)
         {
-            var current = waveInterfaces[curWave];
+            var current = waveInterfaces[buttonIndexer];
             yield return StartCoroutine(SpawnAllEnemiesByWave(current));
         }
+        else
+        {
+            for (var curWave = startingWave; curWave < waveInterfaces.Count; curWave++)
+            {
+                var current = waveInterfaces[curWave];
+                yield return StartCoroutine(SpawnAllEnemiesByWave(current));
+            }
+        }
+        
     }
 
     private IEnumerator SpawnAllEnemiesByWave(WaveInterface _waveInterface)
@@ -131,6 +208,11 @@ public class PersonSpawner : MonoBehaviour
     private void GeneratePerson(WaveInterface _waveInterface)
     {
         int generateRandomPerson = 0;
+        if (buttonLength > 1)
+        {
+            generateRandomPerson = buttonIndexer;
+        }
+        
         if (_waveInterface.GetPerson().Count > 1)
         {
             generateRandomPerson = Random.Range(0, 4);
