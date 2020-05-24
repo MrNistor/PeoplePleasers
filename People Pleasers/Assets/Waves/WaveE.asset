@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7672494f8c2ca346b7a2685723c54f4, type: 3}
+  m_Name: WaveE
+  m_EditorClassIdentifier: 
+  personPrefabs: {fileID: 1317728891854681545, guid: 2bdff2853d78c85468e98c7866dc7a62,
+    type: 3}
+  pathPrefabs: {fileID: 2718535763197251154, guid: e7ef0b736da4c29439c688e92f53883a,
+    type: 3}
+  timeBetweenSpawns: 1
+  numberOfPerson: 5
+  pMoveSpeed: 2

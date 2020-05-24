@@ -6688,7 +6688,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -397.6, y: -45.2}
+  m_AnchoredPosition: {x: -397.6, y: -45.200012}
   m_SizeDelta: {x: 323.2, y: 211.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1570545380
@@ -7457,12 +7457,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
+      propertyPath: spawnNumberIndicator.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
+        type: 3}
       propertyPath: spawnButton
       value: 
       objectReference: {fileID: 743083019}
     - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
       propertyPath: spawnNumberIndicator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
+        type: 3}
+      propertyPath: spawnNumberIndicator.Array.data[0]
       value: 
       objectReference: {fileID: 1926239246}
     - target: {fileID: 1496115803985791324, guid: 7cd31bd86cf6d624db89d0a02195aa17,
@@ -7725,12 +7735,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
         type: 3}
+      propertyPath: spawnNumberIndicator.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
+        type: 3}
       propertyPath: spawnButton
       value: 
       objectReference: {fileID: 424398642}
     - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
         type: 3}
       propertyPath: spawnNumberIndicator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
+        type: 3}
+      propertyPath: spawnNumberIndicator.Array.data[0]
       value: 
       objectReference: {fileID: 1766463337}
     m_RemovedComponents: []

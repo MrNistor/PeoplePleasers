@@ -9,7 +9,7 @@ public class PersonSpawner : MonoBehaviour
     private int startingWave = 0;
 
     public Button spawnButton;
-    public Text spawnNumberIndicator;
+    public Text[] spawnNumberIndicator;
     
     public float timeAutomaticClick = 20.0f;
     private float maxFillAmount = 1.0f;
@@ -21,7 +21,17 @@ public class PersonSpawner : MonoBehaviour
         coroutineForBtnNotClicked = StartCoroutine(AutomaticClick());
         spawnButton.GetComponent<Image>().fillAmount = maxFillAmount;
         SpawnButtonIndicator();
-        spawnNumberIndicator.text = "X" + waveInterfaces[0].GetNumberOfPerson();
+        // today update may  24
+        if (spawnNumberIndicator.Length > 1)
+        {
+            spawnNumberIndicator[0].text = "X" + waveInterfaces[0].GetNumberOfPerson();
+            spawnNumberIndicator[1].text = "X" + waveInterfaces[1].GetNumberOfPerson();
+        }
+        else
+        {
+            spawnNumberIndicator[0].text = "X" + waveInterfaces[0].GetNumberOfPerson();
+        }
+        
         
     }
 
@@ -68,25 +78,35 @@ public class PersonSpawner : MonoBehaviour
     private void SpawnButtonIndicator()
     {
         Debug.Log(waveInterfaces[0].GetPerson()[0]);
-        if (waveInterfaces[0].GetPerson()[0].name.Contains("Hungry"))
+        if (spawnNumberIndicator.Length > 1)
         {
-            spawnButton.GetComponent<Image>().color = Color.red;
-        }
-        else if (waveInterfaces[0].GetPerson()[0].name.Contains("Thirsty"))
-        {
-            spawnButton.GetComponent<Image>().color = Color.blue;
-        }
-        else if (waveInterfaces[0].GetPerson()[0].name.Contains("Hot"))
-        {
-            spawnButton.GetComponent<Image>().color = new Color(255f, 174f, 0);
-        }
-        else if (waveInterfaces[0].GetPerson()[0].name.Contains("Bored"))
-        {
-            spawnButton.GetComponent<Image>().color = new Color(206f, 0, 255f);
+
         }
         else
         {
-            //Debug.Log("humm");
+
+
+            if (waveInterfaces[0].GetPerson()[0].name.Contains("Hungry"))
+            {
+                spawnButton.GetComponent<Image>().color = Color.red;
+            }
+            else if (waveInterfaces[0].GetPerson()[0].name.Contains("Thirsty"))
+            {
+                spawnButton.GetComponent<Image>().color = Color.blue;
+            }
+            else if (waveInterfaces[0].GetPerson()[0].name.Contains("Hot"))
+            {
+                spawnButton.GetComponent<Image>().color = new Color(255f, 174f, 0);
+            }
+            else if (waveInterfaces[0].GetPerson()[0].name.Contains("Bored"))
+            {
+                spawnButton.GetComponent<Image>().color = new Color(206f, 0, 255f);
+            }
+            else
+            {
+                //Debug.Log("humm");
+            }
+
         }
     }
 
