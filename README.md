@@ -57,4 +57,6 @@ Development Log
   - Completed Updated tower spawn prefabs [Jun]
   - Completed Level2 Spawn other two type people Updated Level2 so it has same functionality with level1. [Jun]
   - Completed tutorial for level 1 and 2 [Leighlyn]
+  - Added How to play, changed the volume size, Hide unuse tower for level1 and level2 [Jun]
+  - Added multi spanwer btn at test scene (this will go to level 3, 4, etc...) [Jun]
 
