@@ -49,4 +49,14 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(currentSceneIndex);
     }
+
+    public void LoadHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+
+    public void LoadLevel1Scene()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
 }
