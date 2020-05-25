@@ -28,7 +28,7 @@ public class Tutorial7Animation : MonoBehaviour
 
     public void Tutorial7Done()
     {
-        GameObject.Find("TutorialCanvas").GetComponent<TutorialController>().tutorialStep = -1;
+        GameObject.Find("TutorialCanvas").GetComponent<TutorialController>().tutorialStep++;
         gameObject.SetActive(false);
     }
 }
