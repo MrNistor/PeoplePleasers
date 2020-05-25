@@ -1000,7 +1000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &206735913
 Transform:
   m_ObjectHideFlags: 0
@@ -6797,6 +6797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d37a384e1229bf4698eaca25fc9f3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 1
 --- !u!114 &1149186581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8186,6 +8187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d37a384e1229bf4698eaca25fc9f3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 1
 --- !u!114 &1474890192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8637,6 +8639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d37a384e1229bf4698eaca25fc9f3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 1
 --- !u!114 &1510149345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10996,6 +10999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d37a384e1229bf4698eaca25fc9f3d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isActive: 1
 --- !u!114 &2016134294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11926,6 +11930,11 @@ PrefabInstance:
       propertyPath: spawnNumberIndicator.Array.data[1]
       value: 
       objectReference: {fileID: 677617811}
+    - target: {fileID: 5232285239664264818, guid: a4697eb02b54a7f42821265be2b9a89d,
+        type: 3}
+      propertyPath: timeAutomaticClick
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 5232285239664264819, guid: a4697eb02b54a7f42821265be2b9a89d,
         type: 3}
       propertyPath: m_Name

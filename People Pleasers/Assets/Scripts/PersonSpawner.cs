@@ -81,16 +81,27 @@ public class PersonSpawner : MonoBehaviour
     private IEnumerator AutomaticClick()
     {
         yield return new WaitForSeconds(timeAutomaticClick);
-        Debug.Log("Before Invoke: " + buttonIndexer);
-        spawnButton[buttonIndexer].onClick.Invoke();
-        Debug.Log("After Invoke: " + buttonIndexer);
-        if (buttonIndexer == 1)
+        if (turnOffSecondBtn == true)
         {
+            yield break;
+        }
+        //Debug.Log("Before Invoke: " + buttonIndexer);
+        spawnButton[buttonIndexer].onClick.Invoke();
+        //Debug.Log("After Invoke: " + buttonIndexer);
+        // added && turnOffSecondBtn
+        if (buttonIndexer == 1 && turnOffSecondBtn != true)
+        {
+            //Debug.Log("I am calling coroutine automaticClick");
             spawnButton[0].gameObject.SetActive(false);
             StartCoroutine(AutomaticClick());
+        } else if (buttonIndexer == 1 && turnOffSecondBtn == true)
+        {
+            //Debug.Log("I am stopping automaticClick routine");
+            // StopCoroutine(AutomaticClick());
+            // StopAllCoroutines();
         }
         //spawnButton[buttonIndexer].gameObject.SetActive(false);
-        Debug.Log("AutomaticClick: " + buttonIndexer);
+        //Debug.Log("AutomaticClick: " + buttonIndexer);
     }
 
     private void AutomaticStartIndicator()
@@ -110,33 +121,50 @@ public class PersonSpawner : MonoBehaviour
         StartCoroutine(SpawnAllWaves());
         // I have to enable the button after the method above is called
         ButtonClicked();
+        //Debug.Log("At start coroutine: " + buttonIndexer);
         spawnButton[buttonIndexer].enabled = false;
-        if (buttonLength > 1)
+        // added && buttonIndexer == 0
+        //Debug.Log("At startcoroutine: " + turnOffSecondBtn);
+        if (buttonLength > 1 && buttonIndexer == 0)
         {
             buttonIndexer = 1;
+            
             spawnButton[buttonIndexer].enabled = true;
             spawnButton[buttonIndexer].gameObject.SetActive(true);
+
             SpawnButtonIndicator();
+            //Debug.Log(" Got in Condition state: " + buttonIndexer);
         }
         
         if (turnOffSecondBtn == true)
         {
             spawnButton[buttonIndexer].enabled = false;
             spawnButton[buttonIndexer].gameObject.SetActive(false);
+            
+            //Debug.Log("I am insdie turnoffSecond True statement");
+           
+            
+        }
+        //Debug.Log("Reach here?");
+        if (turnOffSecondBtn == false && buttonIndexer == 1)
+        {
+            //Debug.Log("Got in here!");
+            StartCoroutine(AutomaticClick());
         }
         StopCoroutine(coroutineForBtnNotClicked);
     }
 
     private void ButtonClicked()
     {
-        Debug.Log("I am Button Clicked " + buttonIndexer);
+        //Debug.Log("I am Button Clicked " + buttonIndexer);
         Color c = spawnButton[buttonIndexer].gameObject.GetComponent<Image>().color;
         c.a = 0f;
         spawnButton[buttonIndexer].gameObject.GetComponent<Image>().color = c;
         spawnNumberIndicator[buttonIndexer].text = "";
         spawnButton[buttonIndexer].gameObject.SetActive(false);
         spawnButton[buttonIndexer].enabled = false;
-        Debug.Log("I am the Button Clicked: " + buttonIndexer + "clicked!");
+        //Debug.Log("I am the Button Clicked: " + buttonIndexer + "clicked!");
+
         if (buttonIndexer == 1)
         {
             turnOffSecondBtn = true;
@@ -145,7 +173,7 @@ public class PersonSpawner : MonoBehaviour
     
     private void SpawnButtonIndicator()
     {
-        Debug.Log(waveInterfaces[0].GetPerson()[0]);
+        //Debug.Log(waveInterfaces[0].GetPerson()[0]);
         if (spawnNumberIndicator.Length > 1 && buttonLength == 1)
         {
 
