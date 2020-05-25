@@ -20,10 +20,10 @@ public class BurgerTower : MonoBehaviour
         //sellBtn.enabled = false;
     }
 
-    private void OnMouseDown()
-    {
-        Debug.Log("Do you want to sell?");
-    }
+    //private void OnMouseDown()
+    //{
+    //    Debug.Log("Do you want to sell?");
+    //}
 
     private void OnTriggerEnter2D(Collider2D other)
     {
