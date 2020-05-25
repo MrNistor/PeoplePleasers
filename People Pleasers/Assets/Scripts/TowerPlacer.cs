@@ -102,6 +102,10 @@ public class TowerPlacer : MonoBehaviour
             {
                 currentMoney -= towerPrice;
                 UpdateMoneyText();
+                GameObject.Find("EntertainmentFollow").GetComponent<FollowMouseTower>().HideImage();
+                GameObject.Find("FoodFollow").GetComponent<FollowMouseTower>().HideImage();
+                GameObject.Find("DrinkFollow").GetComponent<FollowMouseTower>().HideImage();
+                GameObject.Find("FanFollow").GetComponent<FollowMouseTower>().HideImage();
             }
 
             GameObject tower = Instantiate(towerCreater.GetTowerPrefab()[towerNumber], transform.position, Quaternion.identity) as GameObject;
