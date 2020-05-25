@@ -8,6 +8,7 @@ public class TutorialGlow : MonoBehaviour
     private float alpha = 0f;
     private Color imageColor;
     private bool isIncreasing = true;
+    public bool isActive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +43,7 @@ public class TutorialGlow : MonoBehaviour
 
     public void PointerEnter()
     {
-        GameObject.Find("TutorialCanvas").GetComponent<TutorialController>().tutorialStep++;
         gameObject.SetActive(false);
+        isActive = false;
     }
 }

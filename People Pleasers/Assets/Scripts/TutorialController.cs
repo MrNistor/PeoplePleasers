@@ -5,10 +5,17 @@ using UnityEngine;
 public class TutorialController : MonoBehaviour
 {
     public int tutorialStep = 0;
-    private GameObject tutorialButton1;
-    private GameObject tutorialButton2;
-    private GameObject tutorialButton3;
-    private GameObject tutorialButton4;
+
+    private GameObject tutorial1;
+    private GameObject tutorial2;
+    private GameObject tutorial3;
+    private GameObject tutorial4;
+    private GameObject tutorial5;
+    private GameObject tutorial6;
+    private GameObject tutorial7;
+
+    private GameObject tutorialTitle;
+    private GameObject skipButton;
 
     private GameObject personSpawner0;
     private GameObject personSpawnerButton0;
@@ -18,14 +25,25 @@ public class TutorialController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tutorialButton1 = GameObject.Find("TutorialButton1");
-        tutorialButton2 = GameObject.Find("TutorialButton2");
-        tutorialButton3 = GameObject.Find("TutorialButton3");
-        tutorialButton4 = GameObject.Find("TutorialButton4");
-        tutorialButton1.SetActive(true);
-        tutorialButton2.SetActive(false);
-        tutorialButton3.SetActive(false);
-        tutorialButton4.SetActive(false);
+        tutorial1 = GameObject.Find("Tutorial1");
+        tutorial2 = GameObject.Find("Tutorial2");
+        tutorial3 = GameObject.Find("Tutorial3");
+        tutorial4 = GameObject.Find("Tutorial4");
+        tutorial5 = GameObject.Find("Tutorial5");
+        tutorial6 = GameObject.Find("Tutorial6");
+        tutorial7 = GameObject.Find("Tutorial7");
+
+        tutorialTitle = GameObject.Find("TutorialTitle");
+        skipButton = GameObject.Find("SkipButton");
+
+        tutorial1.SetActive(true);
+        tutorial2.SetActive(false);
+        tutorial3.SetActive(false);
+        tutorial4.SetActive(false);
+        tutorial5.SetActive(false);
+        tutorial6.SetActive(false);
+        tutorial7.SetActive(false);
+        tutorialTitle.SetActive(true);
 
         personSpawner0 = GameObject.Find("PersonSpawner(0)");
         personSpawner1 = GameObject.Find("PersonSpawner (1)");
@@ -43,10 +61,15 @@ public class TutorialController : MonoBehaviour
         switch (tutorialStep)
         {
             case -1:
-                tutorialButton1.SetActive(false);
-                tutorialButton2.SetActive(false);
-                tutorialButton3.SetActive(false);
-                tutorialButton4.SetActive(false);
+                tutorial1.SetActive(false);
+                tutorial2.SetActive(false);
+                tutorial3.SetActive(false);
+                tutorial4.SetActive(false);
+                tutorial5.SetActive(false);
+                tutorial6.SetActive(false);
+                tutorial7.SetActive(false);
+                tutorialTitle.SetActive(false);
+                skipButton.SetActive(false);
                 personSpawner0.SetActive(true);
                 personSpawner1.SetActive(true);
                 personSpawner0.GetComponent<PersonSpawner>().startPersonSpawn = true;
@@ -55,13 +78,64 @@ public class TutorialController : MonoBehaviour
                 personSpawnerButton1.SetActive(true);
                 break;
             case 1:
-                tutorialButton2.SetActive(true);
+                tutorial1.SetActive(false);
+                tutorial2.SetActive(true);
+                tutorial3.SetActive(false);
+                tutorial4.SetActive(false);
+                tutorial5.SetActive(false);
+                tutorial6.SetActive(false);
+                tutorial7.SetActive(false);
+                tutorialTitle.SetActive(true);
                 break;
             case 2:
-                tutorialButton3.SetActive(true);
+                tutorial1.SetActive(false);
+                tutorial2.SetActive(false);
+                tutorial3.SetActive(true);
+                tutorial4.SetActive(false);
+                tutorial5.SetActive(false);
+                tutorial6.SetActive(false);
+                tutorial7.SetActive(false);
+                tutorialTitle.SetActive(true);
                 break;
             case 3:
-                tutorialButton4.SetActive(true);
+                tutorial1.SetActive(false);
+                tutorial2.SetActive(false);
+                tutorial3.SetActive(false);
+                tutorial4.SetActive(true);
+                tutorial5.SetActive(false);
+                tutorial6.SetActive(false);
+                tutorial7.SetActive(false);
+                tutorialTitle.SetActive(true);
+                break;
+            case 4:
+                tutorial1.SetActive(false);
+                tutorial2.SetActive(false);
+                tutorial3.SetActive(false);
+                tutorial4.SetActive(false);
+                tutorial5.SetActive(true);
+                tutorial6.SetActive(false);
+                tutorial7.SetActive(false);
+                tutorialTitle.SetActive(true);
+                break;
+            case 5:
+                tutorial1.SetActive(false);
+                tutorial2.SetActive(false);
+                tutorial3.SetActive(false);
+                tutorial4.SetActive(false);
+                tutorial5.SetActive(false);
+                tutorial6.SetActive(true);
+                tutorial7.SetActive(false);
+                tutorialTitle.SetActive(false);
+                break;
+            case 6:
+                tutorial1.SetActive(false);
+                tutorial2.SetActive(false);
+                tutorial3.SetActive(false);
+                tutorial4.SetActive(false);
+                tutorial5.SetActive(false);
+                tutorial6.SetActive(false);
+                tutorial7.SetActive(true);
+                tutorialTitle.SetActive(false);
                 break;
         }
     }
