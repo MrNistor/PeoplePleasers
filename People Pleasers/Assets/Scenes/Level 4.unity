@@ -571,17 +571,17 @@ PrefabInstance:
     - target: {fileID: 4583485475257026891, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.084905684
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4583485475257026891, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.07008724
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4583485475257026891, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.07008724
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4583485475666364972, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
@@ -2072,9 +2072,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  winningScore: 5
+  winningScore: 21
   peopleCount: 0
-  totalPeople: 10
+  totalPeople: 42
   winScreen: {fileID: 99415752}
   loseScreen: {fileID: 819211681}
   scoreBoard: {fileID: 37636078}
@@ -6024,7 +6024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7055,7 +7055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14719,7 +14719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

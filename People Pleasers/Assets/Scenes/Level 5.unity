@@ -184,7 +184,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 612429540}
     - target: {fileID: 4583485474767695318, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
       propertyPath: m_Name
@@ -393,7 +393,7 @@ RectTransform:
   - {fileID: 1559350102}
   - {fileID: 1301090947}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -541,7 +541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &414027402
 GameObject:
@@ -4293,7 +4293,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 612429540}
     - target: {fileID: 8485701825911853742, guid: bdbb1ad8a71678c4ca0a33b23ad46423,
         type: 3}
       propertyPath: m_AnchoredPosition.x
