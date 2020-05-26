@@ -60,4 +60,7 @@ Development Log
   - Added How to play, changed the volume size, Hide unuse tower for level1 and level2 [Jun]
   - Added multi spanwer btn at test scene (this will go to level 3, 4, etc...) [Jun]
 - May 24, 2020
-  - Two ways of multi spawn (one with different delay time on each spawn people and the other one is spawn multi people at one click but no time differece) [Jun] 
+  - Two ways of multi spawn (one with different delay time on each spawn people and the other one is spawn multi people at one click but no time differece) [Jun]
+- May 25, 2020
+  - Finished the template level [Alex]
+  - Created levels 4 - 8 [Alex] 
