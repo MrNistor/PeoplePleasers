@@ -7,8 +7,8 @@ using UnityEngine.EventSystems;
 public class TowerBtnColor : MonoBehaviour
 {
     private Image _image;
-   // public GameObject ui_prefab;
-    //int tap;
+    public GameObject ui_prefab;
+
 
     private float lastClick = 0;
     private float waitTime = 1.0f; //wait time befor reacting
@@ -19,7 +19,7 @@ public class TowerBtnColor : MonoBehaviour
     void Start()
     {
         _image = GetComponent<Image>();
-       // ui_prefab.gameObject.SetActive(false);
+        ui_prefab.gameObject.SetActive(false);
         
 
     }
@@ -27,7 +27,10 @@ public class TowerBtnColor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (Input.GetKeyDown("space"))
+        {
+            ui_prefab.gameObject.SetActive(true);
+        }
     }
 
     private void OnMouseEnter()
