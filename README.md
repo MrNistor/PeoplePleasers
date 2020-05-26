@@ -66,3 +66,4 @@ Development Log
   - Finished the template level [Alex]
   - Created levels 4 - 8 [Alex] 
   - Updated UI upgrade menu[Angie]
+  - Finish clickable towers [Nick]
