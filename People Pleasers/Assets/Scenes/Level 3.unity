@@ -6483,7 +6483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  winningScore: 5
+  winningScore: 8
   peopleCount: 0
   totalPeople: 10
   winScreen: {fileID: 1324085307}
@@ -24194,7 +24194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2118013458, guid: f6290b7c8553690468c6bc575ccd265a, type: 3}
       propertyPath: m_Text
-      value: 800
+      value: 640
       objectReference: {fileID: 0}
     - target: {fileID: 4583485473914769680, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}

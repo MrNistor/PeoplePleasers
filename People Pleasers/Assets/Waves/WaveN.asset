@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7672494f8c2ca346b7a2685723c54f4, type: 3}
+  m_Name: WaveN
+  m_EditorClassIdentifier: 
+  personPrefabs: {fileID: 7129702900561152775, guid: 3f3d31fa19551f740aa6773d978a0699,
+    type: 3}
+  pathPrefabs: {fileID: 6499755537681861397, guid: 796243e07a1e6c6409b961b40001231f,
+    type: 3}
+  timeBetweenSpawns: 1.5
+  numberOfPerson: 6
+  pMoveSpeed: 2
