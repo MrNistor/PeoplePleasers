@@ -67,3 +67,4 @@ Development Log
   - Created levels 4 - 8 [Alex] 
   - Updated UI upgrade menu[Angie]
   - Finish clickable towers [Nick]
+  - Level 3 and 4 are now same as level 1 and 2 except tutorial [Jun]
