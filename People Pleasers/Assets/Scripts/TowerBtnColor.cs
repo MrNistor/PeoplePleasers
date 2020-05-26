@@ -7,8 +7,8 @@ using UnityEngine.EventSystems;
 public class TowerBtnColor : MonoBehaviour
 {
     private Image _image;
-    public GameObject ui_prefab;
-    int tap;
+   // public GameObject ui_prefab;
+    //int tap;
 
     private float lastClick = 0;
     private float waitTime = 1.0f; //wait time befor reacting
@@ -19,7 +19,7 @@ public class TowerBtnColor : MonoBehaviour
     void Start()
     {
         _image = GetComponent<Image>();
-        ui_prefab.gameObject.SetActive(false);
+       // ui_prefab.gameObject.SetActive(false);
         
 
     }
@@ -50,7 +50,7 @@ public class TowerBtnColor : MonoBehaviour
     {
        if (eventData.button == PointerEventData.InputButton.Right)
         {
-           ui_prefab.gameObject.SetActive(true);
+          // ui_prefab.gameObject.SetActive(true);
             Debug.Log("Angie Testing");
         }
 
