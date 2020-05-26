@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 [CreateAssetMenu(menuName = "Tower Creater")]
 public class TowerCreater : ScriptableObject
@@ -62,9 +63,11 @@ public class TowerCreater : ScriptableObject
                 isTowerClicked = false;
                 break;
         }
+        
         Debug.Log("Btn clicked" + selected);
         //return selected;
     }
+
 
     public int GetSelectedTower()
     {

@@ -527,7 +527,7 @@ MonoBehaviour:
   totalPeople: 10
   winScreen: {fileID: 99415752}
   loseScreen: {fileID: 819211681}
-  scoreBoard: {fileID: 0}
+  scoreBoard: {fileID: 1230646617}
   happinessPercent: 0.4
 --- !u!4 &258777038
 Transform:
@@ -4222,6 +4222,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1230646617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1698779674, guid: f6290b7c8553690468c6bc575ccd265a,
+    type: 3}
+  m_PrefabInstance: {fileID: 37636074}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1236624816
 PrefabInstance:
   m_ObjectHideFlags: 0

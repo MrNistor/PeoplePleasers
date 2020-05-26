@@ -23,15 +23,15 @@ public class TowerPlacer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // ui_prefab.gameObject.SetActive(false); //Angie;s upgrade menu testing
+         
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if(Input.GetMouseButtonDown(0))    //Angie;s upgrade menu testing
+        // if(Input.GetMouseButtonDown(0))    //Angie;s upgrade menu testing
         //{
-        // ui_prefab.gameObject.SetActive(true);  //Angie;s upgrade menu testing
+            //ui_prefab.gameObject.SetActive(true);  //Angie;s upgrade menu testing
         //}
 
     }
@@ -68,6 +68,7 @@ public class TowerPlacer : MonoBehaviour
 
     private void OnMouseDown()
     {
+        
         var selectTowerIndex = RetrieveTower();
         switch (selectTowerIndex)
         {
@@ -121,10 +122,15 @@ public class TowerPlacer : MonoBehaviour
             tower.transform.SetParent(transform);
             uiUpgrade.transform.SetParent(transform);
             uiUpgrade.gameObject.SetActive(false);
+            
+
+
+
         }
         else
         {
             Debug.Log("Tower is already placed on that tile");
+            
         }
     }
 
