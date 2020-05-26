@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 8493781}
   - component: {fileID: 8493783}
   - component: {fileID: 8493782}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 15743902}
   - component: {fileID: 15743904}
   - component: {fileID: 15743903}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial72Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 33562503}
   - component: {fileID: 33562505}
   - component: {fileID: 33562504}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -888,7 +888,7 @@ GameObject:
   - component: {fileID: 105030967}
   - component: {fileID: 105030969}
   - component: {fileID: 105030968}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1445,7 +1445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 170520337}
   - component: {fileID: 170520338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial3Drink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1525,7 +1525,7 @@ GameObject:
   - component: {fileID: 175590738}
   - component: {fileID: 175590740}
   - component: {fileID: 175590739}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: TutorialTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1762,7 +1762,7 @@ GameObject:
   - component: {fileID: 243628481}
   - component: {fileID: 243628483}
   - component: {fileID: 243628482}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2100,7 +2100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 276086420}
   - component: {fileID: 276086421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial2Drink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2179,7 +2179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277611159}
   - component: {fileID: 277611160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PersonHot 100x100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2260,7 +2260,7 @@ GameObject:
   - component: {fileID: 301564146}
   - component: {fileID: 301564145}
   - component: {fileID: 301564144}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2359,7 +2359,7 @@ GameObject:
   - component: {fileID: 316416848}
   - component: {fileID: 316416850}
   - component: {fileID: 316416849}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2435,7 +2435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 332465806}
   - component: {fileID: 332465807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial3Bar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2844,7 +2844,7 @@ GameObject:
   - component: {fileID: 350079556}
   - component: {fileID: 350079558}
   - component: {fileID: 350079557}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: TowerCostTutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3001,7 +3001,7 @@ GameObject:
   - component: {fileID: 356594356}
   - component: {fileID: 356594358}
   - component: {fileID: 356594357}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial5Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3079,7 +3079,7 @@ GameObject:
   - component: {fileID: 370916818}
   - component: {fileID: 370916820}
   - component: {fileID: 370916819}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3156,7 +3156,7 @@ GameObject:
   - component: {fileID: 394005005}
   - component: {fileID: 394005007}
   - component: {fileID: 394005006}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3235,7 +3235,7 @@ GameObject:
   - component: {fileID: 399918703}
   - component: {fileID: 399918702}
   - component: {fileID: 399918701}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6107,7 +6107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 491423205}
   - component: {fileID: 491423206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial5Person2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6192,7 +6192,7 @@ GameObject:
   - component: {fileID: 493822559}
   - component: {fileID: 493822558}
   - component: {fileID: 493822557}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial6Button2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6341,7 +6341,7 @@ GameObject:
   - component: {fileID: 498693836}
   - component: {fileID: 498693835}
   - component: {fileID: 498693834}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6924,7 +6924,7 @@ GameObject:
   - component: {fileID: 606277258}
   - component: {fileID: 606277257}
   - component: {fileID: 606277256}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7065,7 +7065,7 @@ GameObject:
   - component: {fileID: 624491546}
   - component: {fileID: 624491545}
   - component: {fileID: 624491544}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial6Button1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7213,7 +7213,7 @@ GameObject:
   - component: {fileID: 644736012}
   - component: {fileID: 644736014}
   - component: {fileID: 644736013}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial5Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7292,7 +7292,7 @@ GameObject:
   - component: {fileID: 645053318}
   - component: {fileID: 645053317}
   - component: {fileID: 645053316}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial7Button1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7441,7 +7441,7 @@ GameObject:
   - component: {fileID: 671226862}
   - component: {fileID: 671226861}
   - component: {fileID: 671226860}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial1Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7677,7 +7677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 686466286}
   - component: {fileID: 686466287}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial1Person
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7758,7 +7758,7 @@ GameObject:
   - component: {fileID: 710725398}
   - component: {fileID: 710725397}
   - component: {fileID: 710725396}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial5Fill1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7871,7 +7871,7 @@ GameObject:
   - component: {fileID: 742785327}
   - component: {fileID: 742785326}
   - component: {fileID: 742785325}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial5Fill2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7982,7 +7982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 748464324}
   - component: {fileID: 748464325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial3Person2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8140,7 +8140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 783886693}
   - component: {fileID: 783886694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial5Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8222,7 +8222,7 @@ GameObject:
   - component: {fileID: 815540728}
   - component: {fileID: 815540727}
   - component: {fileID: 815540726}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8361,7 +8361,7 @@ GameObject:
   - component: {fileID: 853816260}
   - component: {fileID: 853816262}
   - component: {fileID: 853816261}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial5Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8434,7 +8434,7 @@ GameObject:
   - component: {fileID: 869037813}
   - component: {fileID: 869037812}
   - component: {fileID: 869037811}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8747,7 +8747,7 @@ GameObject:
   - component: {fileID: 947858074}
   - component: {fileID: 947858076}
   - component: {fileID: 947858075}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8902,7 +8902,7 @@ GameObject:
   - component: {fileID: 953355396}
   - component: {fileID: 953355395}
   - component: {fileID: 953355394}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8995,7 +8995,7 @@ GameObject:
   - component: {fileID: 959189699}
   - component: {fileID: 959189698}
   - component: {fileID: 959189697}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial3Fill2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9118,7 +9118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 986367725}
   - component: {fileID: 986367726}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial2Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9311,7 +9311,7 @@ GameObject:
   - component: {fileID: 1026153368}
   - component: {fileID: 1026153367}
   - component: {fileID: 1026153366}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9452,7 +9452,7 @@ GameObject:
   - component: {fileID: 1029035582}
   - component: {fileID: 1029035581}
   - component: {fileID: 1029035580}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9591,7 +9591,7 @@ GameObject:
   - component: {fileID: 1050501354}
   - component: {fileID: 1050501356}
   - component: {fileID: 1050501355}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: PeopleCostTutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9842,7 +9842,7 @@ GameObject:
   - component: {fileID: 1074375990}
   - component: {fileID: 1074375992}
   - component: {fileID: 1074375991}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9998,9 +9998,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1115801952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial
-  m_TagString: Untagged
+  m_TagString: Tutorial
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10234,7 +10234,7 @@ GameObject:
   - component: {fileID: 1135665081}
   - component: {fileID: 1135665083}
   - component: {fileID: 1135665082}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial4Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10389,7 +10389,7 @@ GameObject:
   - component: {fileID: 1198011645}
   - component: {fileID: 1198011647}
   - component: {fileID: 1198011646}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10547,7 +10547,7 @@ GameObject:
   - component: {fileID: 1201809264}
   - component: {fileID: 1201809263}
   - component: {fileID: 1201809262}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial7-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10638,7 +10638,7 @@ GameObject:
   - component: {fileID: 1203625893}
   - component: {fileID: 1203625895}
   - component: {fileID: 1203625894}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10796,7 +10796,7 @@ GameObject:
   - component: {fileID: 1216714422}
   - component: {fileID: 1216714421}
   - component: {fileID: 1216714420}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial3Fill1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11349,7 +11349,7 @@ GameObject:
   - component: {fileID: 1341733392}
   - component: {fileID: 1341733391}
   - component: {fileID: 1341733390}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11488,7 +11488,7 @@ GameObject:
   - component: {fileID: 1342080202}
   - component: {fileID: 1342080204}
   - component: {fileID: 1342080203}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11682,7 +11682,7 @@ GameObject:
   - component: {fileID: 1363941868}
   - component: {fileID: 1363941870}
   - component: {fileID: 1363941869}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial6Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11758,7 +11758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1394483393}
   - component: {fileID: 1394483394}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DrinkRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12127,7 +12127,7 @@ GameObject:
   - component: {fileID: 1494585557}
   - component: {fileID: 1494585556}
   - component: {fileID: 1494585555}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12265,7 +12265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1508789585}
   - component: {fileID: 1508789586}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial5Person1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12347,7 +12347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521740263}
   - component: {fileID: 1521740264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Entertainment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12430,7 +12430,7 @@ GameObject:
   - component: {fileID: 1527273059}
   - component: {fileID: 1527273058}
   - component: {fileID: 1527273062}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: SkipButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12705,7 +12705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1560340495}
   - component: {fileID: 1560340496}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial4Person
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12784,7 +12784,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1580270438}
   - component: {fileID: 1580270439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DrinkRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12994,7 +12994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1589941268}
   - component: {fileID: 1589941269}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PersonBored 100x100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13076,9 +13076,9 @@ GameObject:
   - component: {fileID: 1592948106}
   - component: {fileID: 1592948105}
   - component: {fileID: 1592948104}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: TutorialCanvas
-  m_TagString: Untagged
+  m_TagString: Tutorial
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13195,7 +13195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1594486949}
   - component: {fileID: 1594486950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial3Bar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13434,7 +13434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1636064470}
   - component: {fileID: 1636064471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial3Person1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13516,7 +13516,7 @@ GameObject:
   - component: {fileID: 1636841403}
   - component: {fileID: 1636841405}
   - component: {fileID: 1636841404}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13764,7 +13764,7 @@ GameObject:
   - component: {fileID: 1670480623}
   - component: {fileID: 1670480622}
   - component: {fileID: 1670480621}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13904,7 +13904,7 @@ GameObject:
   - component: {fileID: 1674442125}
   - component: {fileID: 1674442124}
   - component: {fileID: 1674442123}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13998,7 +13998,7 @@ GameObject:
   - component: {fileID: 1674697146}
   - component: {fileID: 1674697148}
   - component: {fileID: 1674697147}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial7Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14076,7 +14076,7 @@ GameObject:
   - component: {fileID: 1691971861}
   - component: {fileID: 1691971860}
   - component: {fileID: 1691971859}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14171,7 +14171,7 @@ GameObject:
   - component: {fileID: 1697318063}
   - component: {fileID: 1697318062}
   - component: {fileID: 1697318061}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial2Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14282,7 +14282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1707892328}
   - component: {fileID: 1707892329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14569,7 +14569,7 @@ GameObject:
   - component: {fileID: 1738883705}
   - component: {fileID: 1738883707}
   - component: {fileID: 1738883706}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14726,7 +14726,7 @@ GameObject:
   - component: {fileID: 1759538977}
   - component: {fileID: 1759538979}
   - component: {fileID: 1759538978}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14905,7 +14905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1790123954}
   - component: {fileID: 1790123955}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Entertainment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15064,7 +15064,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1803187098}
   - component: {fileID: 1803187099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial4Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15145,7 +15145,7 @@ GameObject:
   - component: {fileID: 1817843891}
   - component: {fileID: 1817843890}
   - component: {fileID: 1817843889}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial4Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15257,7 +15257,7 @@ GameObject:
   - component: {fileID: 1831149621}
   - component: {fileID: 1831149623}
   - component: {fileID: 1831149622}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15413,7 +15413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871376293}
   - component: {fileID: 1871376294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DrinkRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15492,7 +15492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1895126564}
   - component: {fileID: 1895126565}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15651,7 +15651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1942512293}
   - component: {fileID: 1942512294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial5Bar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15890,7 +15890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1976354662}
   - component: {fileID: 1976354663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial5Level2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16049,7 +16049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1980508203}
   - component: {fileID: 1980508204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial5Bar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16128,7 +16128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1992657655}
   - component: {fileID: 1992657656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial1Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16369,7 +16369,7 @@ GameObject:
   - component: {fileID: 2011428164}
   - component: {fileID: 2011428163}
   - component: {fileID: 2011428165}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16463,7 +16463,7 @@ GameObject:
   - component: {fileID: 2066538620}
   - component: {fileID: 2066538619}
   - component: {fileID: 2066538618}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Tutorial7Button2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16610,7 +16610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2069533477}
   - component: {fileID: 2069533478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial2Person
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16769,7 +16769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2100566358}
   - component: {fileID: 2100566359}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PersonBored 100x100
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16860,7 +16860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2133235813}
   - component: {fileID: 2133235814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tutorial4Drink
   m_TagString: Untagged
   m_Icon: {fileID: 0}

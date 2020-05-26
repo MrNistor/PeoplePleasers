@@ -10,8 +10,8 @@ public class TowerPlacer : MonoBehaviour
     // for money
     public GameObject moneyObj;
 
-    public GameObject ui_prefab;    //Angie;s upgrade menu testing
-    private GameObject uiUpgrade;
+    //public GameObject ui_prefab;    //Angie;s upgrade menu testing
+    //private GameObject uiUpgrade;
 
     private float towerPrice = 80f;
     private float currentMoney;
@@ -118,10 +118,10 @@ public class TowerPlacer : MonoBehaviour
             }
 
             GameObject tower = Instantiate(towerCreater.GetTowerPrefab()[towerNumber], transform.position, Quaternion.identity) as GameObject;
-            uiUpgrade = Instantiate(ui_prefab, transform.position, Quaternion.identity);
+            //uiUpgrade = Instantiate(ui_prefab, transform.position, Quaternion.identity);
             tower.transform.SetParent(transform);
-            uiUpgrade.transform.SetParent(transform);
-            uiUpgrade.gameObject.SetActive(false);
+            //uiUpgrade.transform.SetParent(transform);
+            //uiUpgrade.gameObject.SetActive(false);
             
 
 
