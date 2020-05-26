@@ -9,6 +9,9 @@ public class TowerPlacer : MonoBehaviour
     public TowerCreater towerCreater;
     // for money
     public GameObject moneyObj;
+
+    //public GameObject ui_prefab;    //Angie;s upgrade menu testing
+
     private float towerPrice = 80f;
     private float currentMoney;
     //public float currentMoney;    // not sure why made public?
@@ -19,13 +22,17 @@ public class TowerPlacer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        // ui_prefab.gameObject.SetActive(false); //Angie;s upgrade menu testing
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //if(Input.GetMouseButtonDown(0))    //Angie;s upgrade menu testing
+        //{
+        // ui_prefab.gameObject.SetActive(true);  //Angie;s upgrade menu testing
+        //}
+
     }
 
     public void UpdateMoneyText()
