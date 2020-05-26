@@ -111,6 +111,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   sprite: {fileID: 525134335}
+  ui_prefab: {fileID: 0}
 --- !u!61 &525134333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -504,6 +505,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   sprite: {fileID: 32523541324321631}
+  ui_prefab: {fileID: 0}
 --- !u!1 &32523541533314193
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +629,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   sprite: {fileID: 32523541533314206}
+  ui_prefab: {fileID: 0}
 --- !u!1 &32523541848883963
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,6 +909,7 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   sprite: {fileID: 32523542556377948}
+  ui_prefab: {fileID: 0}
 --- !u!1 &32523542977707018
 GameObject:
   m_ObjectHideFlags: 0

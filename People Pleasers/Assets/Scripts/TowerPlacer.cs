@@ -9,6 +9,10 @@ public class TowerPlacer : MonoBehaviour
     public TowerCreater towerCreater;
     // for money
     public GameObject moneyObj;
+
+    public GameObject ui_prefab;    //Angie;s upgrade menu testing
+    private GameObject uiUpgrade;
+
     private float towerPrice = 80f;
     private float currentMoney;
     //public float currentMoney;    // not sure why made public?
@@ -19,13 +23,17 @@ public class TowerPlacer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // if(Input.GetMouseButtonDown(0))    //Angie;s upgrade menu testing
+        //{
+            //ui_prefab.gameObject.SetActive(true);  //Angie;s upgrade menu testing
+        //}
+
     }
 
     public void UpdateMoneyText()
@@ -60,6 +68,7 @@ public class TowerPlacer : MonoBehaviour
 
     private void OnMouseDown()
     {
+        
         var selectTowerIndex = RetrieveTower();
         switch (selectTowerIndex)
         {
@@ -109,11 +118,19 @@ public class TowerPlacer : MonoBehaviour
             }
 
             GameObject tower = Instantiate(towerCreater.GetTowerPrefab()[towerNumber], transform.position, Quaternion.identity) as GameObject;
+            uiUpgrade = Instantiate(ui_prefab, transform.position, Quaternion.identity);
             tower.transform.SetParent(transform);
+            uiUpgrade.transform.SetParent(transform);
+            uiUpgrade.gameObject.SetActive(false);
+            
+
+
+
         }
         else
         {
             Debug.Log("Tower is already placed on that tile");
+            
         }
     }
 
