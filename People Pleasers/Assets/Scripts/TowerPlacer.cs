@@ -101,6 +101,7 @@ public class TowerPlacer : MonoBehaviour
             if (currentMoney < towerPrice)
             {
                 Debug.Log("Not Enough Money");
+                HideFollowImages();
                 StartCoroutine(MoneyIconShake());
                 return;
             }
@@ -108,10 +109,7 @@ public class TowerPlacer : MonoBehaviour
             {
                 currentMoney -= towerPrice;
                 UpdateMoneyText();
-                GameObject.Find("EntertainmentFollow").GetComponent<FollowMouseTower>().HideImage();
-                GameObject.Find("FoodFollow").GetComponent<FollowMouseTower>().HideImage();
-                GameObject.Find("DrinkFollow").GetComponent<FollowMouseTower>().HideImage();
-                GameObject.Find("FanFollow").GetComponent<FollowMouseTower>().HideImage();
+                HideFollowImages();
             }
 
             GameObject tower = Instantiate(towerCreater.GetTowerPrefab()[towerNumber], transform.position, Quaternion.identity) as GameObject;
@@ -119,16 +117,20 @@ public class TowerPlacer : MonoBehaviour
             tower.transform.SetParent(transform);
             //uiUpgrade.transform.SetParent(transform);
             //uiUpgrade.gameObject.SetActive(false);
-            
-
-
-
         }
         else
         {
             Debug.Log("Tower is already placed on that tile");
             
         }
+    }
+
+    private void HideFollowImages()
+    {
+        GameObject.Find("EntertainmentFollow").GetComponent<FollowMouseTower>().HideImage();
+        GameObject.Find("FoodFollow").GetComponent<FollowMouseTower>().HideImage();
+        GameObject.Find("DrinkFollow").GetComponent<FollowMouseTower>().HideImage();
+        GameObject.Find("FanFollow").GetComponent<FollowMouseTower>().HideImage();
     }
 
     /// <summary>
