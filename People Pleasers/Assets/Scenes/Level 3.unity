@@ -24679,7 +24679,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e9cae9d7e22f3f141b8283c73deb4678, type: 3}
-    m_FontSize: 75
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -24690,7 +24690,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Pause! Press Space to again to Continue
+  m_Text: Pause! Press SPACE again to Continue
 --- !u!222 &1715900920
 CanvasRenderer:
   m_ObjectHideFlags: 0
