@@ -12,21 +12,39 @@ public class ScoreManager : MonoBehaviour
     public GameObject winScreen;  // requires winning screen object (make sure it is disabled by default)
     public GameObject loseScreen;  // requires losing screen object (make sure it is disabled by default)
     public GameObject scoreBoard;  // requires SpawnCanvas object with Score component
+    // pause
+    public GameObject pauseBoard;
+    private bool isPasuse;
+    // end of pause
     public float happinessPercent = 0.4f;  // happiness level required to earn a point
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        isPasuse = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // ---- REMOVE, only for test purposes -----
+      
         if (Input.GetKeyUp("space"))
-            peopleCount = totalPeople;
-        // -----------------------------------------
+        {
+            if (isPasuse == false)
+            {
+                isPasuse = true;
+                pauseBoard.SetActive(true);
+                 OnPause();
+            }
+            else if (isPasuse == true)
+            {
+                isPasuse = false;
+                pauseBoard.SetActive(false);
+                OnStart();
+            }
+        }
+            
+       
 
         scoreBoard.GetComponent<Text>().text = "Score: " + score.ToString() + "/" + winningScore;  // update score board
         // check if level has ended
@@ -39,5 +57,14 @@ public class ScoreManager : MonoBehaviour
                 loseScreen.SetActive(true);
         }
 
+    }
+
+    private void OnPause()
+    {
+        Time.timeScale = 0f;
+    }
+    private void OnStart()
+    {
+        Time.timeScale = 1f;
     }
 }

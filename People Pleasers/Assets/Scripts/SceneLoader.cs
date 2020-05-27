@@ -18,10 +18,17 @@ public class SceneLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
         if (Input.GetKey(KeyCode.K))
         {
             LoadNextScene();
         }
+
+        if (currentSceneIndex == 0)
+        {
+            StartCoroutine(WaitForSeconds());
+        }
+
     }
 
     private void AddLoadTime()
@@ -29,27 +36,39 @@ public class SceneLoader : MonoBehaviour
         if (currentSceneIndex == 0)
         {
             StartCoroutine(WaitForSeconds());
-        } 
+            
+            LoadNextScene();
+        }
+        
     }
 
     IEnumerator WaitForSeconds()
     {
         yield return new WaitForSeconds(3);
-        LoadNextScene();
+        Debug.Log("Current Scene index is: " + currentSceneIndex);
     }
 
     public void LoadNextScene()
     {
+        PauseChecker();
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        Debug.Log("From LoadNextScene: " + currentSceneIndex);
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
     public void LoadMainMenu()
     {
-        SceneManager.LoadScene(0);
+        PauseChecker();
+        currentSceneIndex = 0;
+        SceneManager.LoadScene(currentSceneIndex);
+        Debug.Log("Current Scene is: " + currentSceneIndex);
+       
     }
 
     public void ReloadScene()
     {
+        PauseChecker();
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }
 
@@ -65,8 +84,16 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadLevel1Scene()
     {
+        PauseChecker();
         SceneManager.LoadScene("Level 1");
     }
 
+    private void PauseChecker()
+    {
+        if (Time.timeScale == 0)
+        {
+            Time.timeScale = 1f;
+        }
+    }
 
 }
