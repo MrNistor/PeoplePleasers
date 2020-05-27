@@ -14,6 +14,7 @@ public class TutorialController : MonoBehaviour
     private GameObject tutorial6;
     private GameObject tutorial7;
     private GameObject tutorial72;
+    private GameObject tutorial8;
 
     private GameObject tutorialTitle;
     private GameObject skipButton;
@@ -34,6 +35,7 @@ public class TutorialController : MonoBehaviour
         tutorial6 = GameObject.Find("Tutorial6");
         tutorial7 = GameObject.Find("Tutorial7");
         tutorial72 = GameObject.Find("Tutorial7-2");
+        tutorial8 = GameObject.Find("Tutorial8");
 
         tutorialTitle = GameObject.Find("TutorialTitle");
         skipButton = GameObject.Find("SkipButton");
@@ -46,6 +48,7 @@ public class TutorialController : MonoBehaviour
         tutorial6.SetActive(false);
         tutorial7.SetActive(false);
         tutorial72.SetActive(false);
+        tutorial8.SetActive(false);
         tutorialTitle.SetActive(true);
 
         personSpawner0 = GameObject.Find("PersonSpawner(0)");
@@ -72,6 +75,7 @@ public class TutorialController : MonoBehaviour
                 tutorial6.SetActive(false);
                 tutorial7.SetActive(false);
                 tutorial72.SetActive(false);
+                tutorial8.SetActive(false);
                 tutorialTitle.SetActive(false);
                 skipButton.SetActive(false);
                 personSpawner0.SetActive(true);
@@ -90,6 +94,7 @@ public class TutorialController : MonoBehaviour
                 tutorial6.SetActive(false);
                 tutorial7.SetActive(false);
                 tutorial72.SetActive(false);
+                tutorial8.SetActive(false);
                 tutorialTitle.SetActive(true);
                 break;
             case 2:
@@ -101,6 +106,7 @@ public class TutorialController : MonoBehaviour
                 tutorial6.SetActive(false);
                 tutorial7.SetActive(false);
                 tutorial72.SetActive(false);
+                tutorial8.SetActive(false);
                 tutorialTitle.SetActive(true);
                 break;
             case 3:
@@ -112,6 +118,7 @@ public class TutorialController : MonoBehaviour
                 tutorial6.SetActive(false);
                 tutorial7.SetActive(false);
                 tutorial72.SetActive(false);
+                tutorial8.SetActive(false);
                 tutorialTitle.SetActive(true);
                 break;
             case 4:
@@ -123,6 +130,7 @@ public class TutorialController : MonoBehaviour
                 tutorial6.SetActive(false);
                 tutorial7.SetActive(false);
                 tutorial72.SetActive(false);
+                tutorial8.SetActive(false);
                 tutorialTitle.SetActive(true);
                 break;
             case 5:
@@ -134,6 +142,7 @@ public class TutorialController : MonoBehaviour
                 tutorial6.SetActive(true);
                 tutorial7.SetActive(false);
                 tutorial72.SetActive(false);
+                tutorial8.SetActive(false);
                 tutorialTitle.SetActive(false);
                 break;
             case 6:
@@ -145,6 +154,7 @@ public class TutorialController : MonoBehaviour
                 tutorial6.SetActive(false);
                 tutorial7.SetActive(true);
                 tutorial72.SetActive(false);
+                tutorial8.SetActive(false);
                 tutorialTitle.SetActive(false);
                 break;
             case 7:
@@ -156,6 +166,19 @@ public class TutorialController : MonoBehaviour
                 tutorial6.SetActive(false);
                 tutorial7.SetActive(false);
                 tutorial72.SetActive(true);
+                tutorial8.SetActive(false);
+                tutorialTitle.SetActive(false);
+                break;
+            case 8:
+                tutorial1.SetActive(false);
+                tutorial2.SetActive(false);
+                tutorial3.SetActive(false);
+                tutorial4.SetActive(false);
+                tutorial5.SetActive(false);
+                tutorial6.SetActive(false);
+                tutorial7.SetActive(false);
+                tutorial72.SetActive(false);
+                tutorial8.SetActive(true);
                 tutorialTitle.SetActive(false);
                 break;
         }
