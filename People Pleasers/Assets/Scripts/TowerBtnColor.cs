@@ -7,30 +7,19 @@ using UnityEngine.EventSystems;
 public class TowerBtnColor : MonoBehaviour
 {
     private Image _image;
-    public GameObject ui_prefab;
-
-
-    private float lastClick = 0;
-    private float waitTime = 1.0f; //wait time befor reacting
-    private float downTime; //internal time from when the key is pressed
-    private bool isHandled = false;
+    //public GameObject ui_prefab;
 
     // Start is called before the first frame update
     void Start()
     {
         _image = GetComponent<Image>();
-        ui_prefab.gameObject.SetActive(false);
-        
-
+        //ui_prefab.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            ui_prefab.gameObject.SetActive(true);
-        }
+        
     }
 
     private void OnMouseEnter()
@@ -46,16 +35,6 @@ public class TowerBtnColor : MonoBehaviour
     private void OnMouseDown()
     {
      
-
-    }
-
-    public void OnPointerClick(PointerEventData eventData)
-    {
-       if (eventData.button == PointerEventData.InputButton.Right)
-        {
-          // ui_prefab.gameObject.SetActive(true);
-            Debug.Log("Angie Testing");
-        }
 
     }
 
