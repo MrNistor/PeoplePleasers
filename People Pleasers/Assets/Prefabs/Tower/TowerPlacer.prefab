@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 525134335}
   - component: {fileID: 525134334}
   - component: {fileID: 525134333}
+  - component: {fileID: 499344935}
   m_Layer: 0
   m_Name: Food (1)
   m_TagString: Untagged
@@ -112,7 +113,6 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   sprite: {fileID: 525134335}
-  ui_prefab: {fileID: 0}
 --- !u!61 &525134333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -139,6 +139,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.12, y: 5.12}
   m_EdgeRadius: 0
+--- !u!114 &499344935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525134332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fa598f4c79d4ef8b9a853c6b3cf559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui_prefab: {fileID: 0}
 --- !u!1 &961665315
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +521,6 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   sprite: {fileID: 32523541324321631}
-  ui_prefab: {fileID: 0}
 --- !u!114 &5050233838196865525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,6 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3fa598f4c79d4ef8b9a853c6b3cf559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ui_prefab: {fileID: 0}
 --- !u!1 &32523541533314193
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,6 +546,7 @@ GameObject:
   - component: {fileID: 32523541533314206}
   - component: {fileID: 9036003053826418662}
   - component: {fileID: 583950203501855703}
+  - component: {fileID: 97235432}
   m_Layer: 0
   m_Name: Fan (1)
   m_TagString: Untagged
@@ -614,7 +628,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -645,6 +659,18 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   sprite: {fileID: 32523541533314206}
+--- !u!114 &97235432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32523541533314193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fa598f4c79d4ef8b9a853c6b3cf559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   ui_prefab: {fileID: 0}
 --- !u!1 &32523541848883963
 GameObject:
@@ -814,6 +840,7 @@ GameObject:
   - component: {fileID: 32523542556377948}
   - component: {fileID: 9067618076453210842}
   - component: {fileID: 579452367872031542}
+  - component: {fileID: 1473788330}
   m_Layer: 0
   m_Name: Drink (1)
   m_TagString: Untagged
@@ -895,7 +922,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -926,6 +953,18 @@ MonoBehaviour:
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
   sprite: {fileID: 32523542556377948}
+--- !u!114 &1473788330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32523542556377951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fa598f4c79d4ef8b9a853c6b3cf559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   ui_prefab: {fileID: 0}
 --- !u!1 &32523542977707018
 GameObject:
@@ -1131,6 +1170,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 8113564224131323767, guid: 1a0ab297e2acf4926b40de754c8eb193,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0ab297e2acf4926b40de754c8eb193, type: 3}
 --- !u!4 &7060777823305731551 stripped
@@ -1210,6 +1254,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI_Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113564224131323767, guid: 1a0ab297e2acf4926b40de754c8eb193,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0ab297e2acf4926b40de754c8eb193, type: 3}
@@ -1291,6 +1340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Shop
       objectReference: {fileID: 0}
+    - target: {fileID: 8113564224131323767, guid: 1a0ab297e2acf4926b40de754c8eb193,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0ab297e2acf4926b40de754c8eb193, type: 3}
 --- !u!4 &4955626284326021573 stripped
@@ -1370,6 +1424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI_Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113564224131323767, guid: 1a0ab297e2acf4926b40de754c8eb193,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0ab297e2acf4926b40de754c8eb193, type: 3}

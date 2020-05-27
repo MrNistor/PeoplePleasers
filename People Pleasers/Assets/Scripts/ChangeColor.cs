@@ -9,21 +9,18 @@ public class ChangeColor : MonoBehaviour
     public Color mouseOverColor;
     public SpriteRenderer sprite;
 
-    public GameObject ui_prefab;
+    //public GameObject ui_prefab;
 
     void Start() {
         sprite = GetComponent<SpriteRenderer>();
-        ui_prefab = GameObject.Find("UI_Shop");
+       // ui_prefab = GameObject.Find("UI_Shop");
         //ui_prefab.SetActive(false);
         
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            ui_prefab.gameObject.SetActive(true);
-        }
+       
 
     }
 

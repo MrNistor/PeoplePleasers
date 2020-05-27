@@ -7,13 +7,12 @@ using UnityEngine.EventSystems;
 public class TowerBtnColor : MonoBehaviour
 {
     private Image _image;
-    //public GameObject ui_prefab;
+
 
     // Start is called before the first frame update
     void Start()
     {
         _image = GetComponent<Image>();
-        //ui_prefab.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
