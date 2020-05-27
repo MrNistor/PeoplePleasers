@@ -67,8 +67,12 @@ public class TowerCreater : ScriptableObject
         Debug.Log("Btn clicked" + selected);
         //return selected;
     }
-
-
+    // may 26
+    public void SetTowerIndex(int _selected)
+    {
+        selected = _selected;
+    }
+    // may 26
     public int GetSelectedTower()
     {
         return selected;

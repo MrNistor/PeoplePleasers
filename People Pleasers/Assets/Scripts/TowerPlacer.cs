@@ -121,7 +121,7 @@ public class TowerPlacer : MonoBehaviour
         else
         {
             Debug.Log("Tower is already placed on that tile");
-            
+
         }
     }
 
@@ -133,6 +133,11 @@ public class TowerPlacer : MonoBehaviour
         GameObject.Find("FanFollow").GetComponent<FollowMouseTower>().HideImage();
     }
 
+    private void BtnClick()
+    {
+        HideFollowImages();
+        towerCreater.SetTowerIndex(-1);
+    }
     /// <summary>
     /// Retrieve tower index number from TowerCreater scriptable object
     /// </summary>

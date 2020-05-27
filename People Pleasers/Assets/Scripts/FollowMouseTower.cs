@@ -34,4 +34,5 @@ public class FollowMouseTower : MonoBehaviour
         c.a = 1f;
         GetComponent<SpriteRenderer>().color = c;
     }
+
 }

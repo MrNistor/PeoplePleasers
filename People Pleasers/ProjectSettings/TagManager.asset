@@ -6,6 +6,7 @@ TagManager:
   tags:
   - HungryPrefab
   - Tutorial
+  - TileTags
   layers:
   - Default
   - TransparentFX
