@@ -15,11 +15,12 @@ public class exitMenuScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            ui_prefab.gameObject.SetActive(false);
-        }
+       
+    }
 
+    public void closeMenu()
+    {
+        ui_prefab.gameObject.SetActive(false);
     }
 
 
