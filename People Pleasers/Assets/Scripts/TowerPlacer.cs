@@ -65,7 +65,7 @@ public class TowerPlacer : MonoBehaviour
 
     private void OnMouseDown()
     {
-        
+        Debug.Log("Clicked");
         var selectTowerIndex = RetrieveTower();
         switch (selectTowerIndex)
         {

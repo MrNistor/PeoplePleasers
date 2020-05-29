@@ -21,6 +21,5 @@ public class UIScript : MonoBehaviour
         {
             ui_prefab.gameObject.SetActive(true);
         }
-
     }
 }
