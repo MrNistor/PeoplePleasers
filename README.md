@@ -75,3 +75,11 @@ Development Log
   - Level 3 and 4 are now same as level 1 and 2 except tutorial [Jun]
   - Completed updated tutorial [Leighlyn]
   - Completed tower image follows mouse until tower is placed [Leighlyn]
+- May 29, 2020
+  - Added rich click button to enable the menu [Alex, Angie]
+  - Added exitMenu function in the menu [Angie]
+- May 30, 2020
+  - Changed the Upgrade menu buttons to buy button [Angie]
+  - Fixed button click on towers to display the Upgrade Menu [Nick]
+  - Made changes in the Fan and entertainment buttons [Angie]
+
