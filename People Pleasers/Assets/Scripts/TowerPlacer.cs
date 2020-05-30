@@ -14,7 +14,7 @@ public class TowerPlacer : MonoBehaviour
     //private GameObject uiUpgrade;
 
     private float towerPrice = 80f;
-    private float currentMoney;
+    public float currentMoney;
     //public float currentMoney;    // not sure why made public?
     // for text
     private float speed = 1.0f;
