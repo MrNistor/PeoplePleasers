@@ -5,18 +5,31 @@ using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour
 {
-    public GameObject ui_prefab;
+    //buttons
     public Button rangeButton;
     public Button happyButton;
     public Button sellButton;
+
+    //gameObjects
+    public GameObject ui_prefab;
     public GameObject range;
+    public GameObject moneyObj;
+
+    //color change
     private float rangeAmount;
     public Color startColor;
     public Color mouseOverColor;
     public SpriteRenderer sprite;
-    public GameObject money;
+    
+    //money amount
+    public float moneyAmount;
 
+    //money shake
+    private float shakeRange = 20f;
+
+    //upgrade trackers
     private float rangeUpgradeCount;
+    private float happyUpgradeCount;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +37,8 @@ public class UIScript : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
 
         ui_prefab = transform.GetChild(1).gameObject;
-        //rangeButton = ui_prefab.transform.Find("RangeButton").GetComponent<Button>();
+        
+        //buttons
         rangeButton = ui_prefab.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<Button>();
         rangeButton.onClick.AddListener(UpgradeRange);
         happyButton = ui_prefab.transform.GetChild(0).GetChild(0).GetChild(7).GetComponent<Button>();
@@ -33,13 +47,16 @@ public class UIScript : MonoBehaviour
         happyButton.onClick.AddListener(SellTower);
 
 
+        moneyObj = GameObject.Find("SpawnCanvas").transform.GetChild(2).gameObject;
+        moneyAmount = float.Parse(moneyObj.GetComponent<Text>().text);
+
+
         range = transform.GetChild(0).gameObject;
         rangeAmount = range.transform.localScale.x / 2f;
-        rangeUpgradeCount = 0;
-        //ui_prefab = GameObject.Find("UI_Shop");
-        // ui_prefab.SetActive(false);
 
-        //ui_prefab.gameObject.SetActive(false);
+        //upgrade trackers
+        rangeUpgradeCount = 0;
+        happyUpgradeCount = 0;
 
     }
 
@@ -88,6 +105,9 @@ public class UIScript : MonoBehaviour
         {
             range.transform.localScale += new Vector3(rangeAmount, rangeAmount, range.transform.localScale.z);
             ++rangeUpgradeCount;
+            float upgradeCost = -60f;
+            //moneyAmount -= 60f;
+            UpdateMoney(upgradeCost);
         }
         else
         {
@@ -102,34 +122,78 @@ public class UIScript : MonoBehaviour
         FanTower fTower;
         DrinkTower dTower;
         EntertainTower eTower;
+        float upgradeCost = -40f;
 
-
-        if (towerName == "Food")
+        if (happyUpgradeCount < 3)
         {
-            bTower = range.GetComponent<BurgerTower>();
-            bTower.maxDistirubtionPower *= 2;
+            if (towerName == "Food")
+            {
+                bTower = range.GetComponent<BurgerTower>();
+                bTower.maxDistirubtionPower += .2f;
+                UpdateMoney(upgradeCost);
+            }
+            else if (towerName == "Fan")
+            {
+                fTower = range.GetComponent<FanTower>();
+                fTower.maxDistirubtionPower += .2f;
+                UpdateMoney(upgradeCost);
+            }
+            else if (towerName == "Drink")
+            {
+                dTower = range.GetComponent<DrinkTower>();
+                dTower.maxDistirubtionPower += .2f;
+                UpdateMoney(upgradeCost);
+            }
+            else if (towerName == "Entertainment")
+            {
+                eTower = range.GetComponent<EntertainTower>();
+                eTower.maxDistirubtionPower += .2f;
+                UpdateMoney(upgradeCost);
+            }
+            ++happyUpgradeCount;
         }
-        else if (towerName == "Fan")
+        else
         {
-            fTower = range.GetComponent<FanTower>();
-            fTower.maxDistirubtionPower *= 2;
+            //max upgrade
         }
-        else if (towerName == "Drink")
-        {
-            dTower = range.GetComponent<DrinkTower>();
-            dTower.maxDistirubtionPower *= 2;
-        }
-        else if (towerName == "Entertainment")
-        {
-            eTower = range.GetComponent<EntertainTower>();
-            eTower.maxDistirubtionPower *= 2;
-        }
+        
 
     }
 
     void SellTower()
     {
         Destroy(this.gameObject);
+        UpdateMoney(80f);
+    }
+
+    void UpdateMoney(float upgradeCost)
+    {
+        if (moneyAmount + upgradeCost < 0) //not enough money
+        {
+            StartCoroutine(MoneyIconShake());
+        }
+        else
+        {
+            moneyAmount += upgradeCost;
+            moneyObj.GetComponent<Text>().text = moneyAmount.ToString();
+        }
+        
+    }
+
+    private IEnumerator MoneyIconShake()
+    {
+        float elpased = 0.0f;
+        Quaternion orginalPos = moneyObj.transform.rotation;
+
+        while (elpased < 1f)
+        {
+            elpased += Time.deltaTime;
+            float z = UnityEngine.Random.value * shakeRange - (shakeRange / 2);
+            moneyObj.transform.eulerAngles = new Vector3(orginalPos.x, orginalPos.y, orginalPos.z + z);
+
+            yield return null;
+        }
+        moneyObj.transform.rotation = orginalPos;
     }
 
 }
