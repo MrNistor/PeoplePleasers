@@ -421,7 +421,7 @@ PrefabInstance:
     - target: {fileID: 8113564224131323767, guid: 1a0ab297e2acf4926b40de754c8eb193,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8113564224309206728, guid: 1a0ab297e2acf4926b40de754c8eb193,
         type: 3}
@@ -3560,6 +3560,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 941796199, guid: e702939ad13b0db4990e830a4978008c, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 941796199, guid: e702939ad13b0db4990e830a4978008c, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 941796199, guid: e702939ad13b0db4990e830a4978008c, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 32523541324321631, guid: e702939ad13b0db4990e830a4978008c,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 32523542502600481, guid: e702939ad13b0db4990e830a4978008c,
         type: 3}
       propertyPath: m_Name
@@ -3620,33 +3637,68 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2647866429789875899, guid: e702939ad13b0db4990e830a4978008c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.00025177002
-      objectReference: {fileID: 0}
-    - target: {fileID: 4302265334125204163, guid: e702939ad13b0db4990e830a4978008c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.00025177002
-      objectReference: {fileID: 0}
     - target: {fileID: 5050233838196865525, guid: e702939ad13b0db4990e830a4978008c,
         type: 3}
       propertyPath: ui_prefab
       value: 
       objectReference: {fileID: 415835438}
-    - target: {fileID: 6106817351210004212, guid: e702939ad13b0db4990e830a4978008c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.00025177002
-      objectReference: {fileID: 0}
-    - target: {fileID: 6711922198802786923, guid: e702939ad13b0db4990e830a4978008c,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.00025177002
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 941796199, guid: e702939ad13b0db4990e830a4978008c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e702939ad13b0db4990e830a4978008c, type: 3}
+--- !u!1 &1292614367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 32523541324321630, guid: e702939ad13b0db4990e830a4978008c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292614366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1292614368 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 32523541324321631, guid: e702939ad13b0db4990e830a4978008c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292614366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1292614369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 32523541533314193, guid: e702939ad13b0db4990e830a4978008c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292614366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1292614370 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 32523541533314206, guid: e702939ad13b0db4990e830a4978008c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292614366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1292614371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292614367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1191f6bf00fc9a428a029864e741473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 1, b: 1, a: 0}
+  mouseOverColor: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 0}
+  sprite: {fileID: 1292614368}
+--- !u!114 &1292614372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292614369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1191f6bf00fc9a428a029864e741473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 1, b: 1, a: 0}
+  mouseOverColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 0}
+  sprite: {fileID: 1292614370}
 --- !u!1 &1336049346
 GameObject:
   m_ObjectHideFlags: 0
