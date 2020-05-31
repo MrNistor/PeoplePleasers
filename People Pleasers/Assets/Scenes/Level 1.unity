@@ -2149,7 +2149,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!224 &250739303
 RectTransform:
@@ -3148,7 +3148,7 @@ PrefabInstance:
     - target: {fileID: 7709222116831088066, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 265.6
+      value: 220.7
       objectReference: {fileID: 0}
     - target: {fileID: 7709222116831088066, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
@@ -8888,7 +8888,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!224 &850585409
 RectTransform:
@@ -10644,7 +10644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1115801952
 Transform:
   m_ObjectHideFlags: 0
@@ -15868,7 +15868,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!224 &1778152470
 RectTransform:
