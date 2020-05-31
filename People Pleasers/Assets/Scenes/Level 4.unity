@@ -603,6 +603,16 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.85866857
       objectReference: {fileID: 0}
+    - target: {fileID: 7709222116831088066, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 492
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709222116831088066, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 38
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6290b7c8553690468c6bc575ccd265a, type: 3}
 --- !u!114 &37636075 stripped
@@ -2203,6 +2213,7 @@ MonoBehaviour:
   winScreen: {fileID: 99415752}
   loseScreen: {fileID: 819211681}
   scoreBoard: {fileID: 37636078}
+  currUpgradeMenu: {fileID: 0}
   pauseBoard: {fileID: 755576144}
   happinessPercent: 0.4
 --- !u!4 &258777038

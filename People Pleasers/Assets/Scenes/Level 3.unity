@@ -6614,6 +6614,7 @@ MonoBehaviour:
   winScreen: {fileID: 1324085307}
   loseScreen: {fileID: 299806735}
   scoreBoard: {fileID: 1741311778}
+  currUpgradeMenu: {fileID: 0}
   pauseBoard: {fileID: 1290553931}
   happinessPercent: 0.4
 --- !u!4 &391037181
@@ -25326,6 +25327,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709222116831088066, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 485.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709222116831088066, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -11.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6290b7c8553690468c6bc575ccd265a, type: 3}

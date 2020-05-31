@@ -179,7 +179,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 3c2cda310fbb94b6aac5b3913aca8752, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -572,7 +572,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 560c542b235fe9e498a0bf3955398294, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2012,7 +2012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &280809865
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6095,7 +6095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 141, y: 666.1}
+  m_AnchoredPosition: {x: 122.9, y: 666.1}
   m_SizeDelta: {x: 142.5, y: 91.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &632311449
@@ -7352,7 +7352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 863, y: 414}
+  m_AnchoredPosition: {x: 808, y: 410}
   m_SizeDelta: {x: 142.5, y: 91.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896691572
@@ -10548,7 +10548,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_TargetDisplay: 0
 --- !u!114 &1355559001
 MonoBehaviour:
@@ -10915,7 +10915,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: ad2540e2f6fc3d74d9b6c00fe45adf15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14232,7 +14232,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 4339dd026be5846a4b16b9cdfe86af58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14280,6 +14280,7 @@ MonoBehaviour:
   winScreen: {fileID: 823820535}
   loseScreen: {fileID: 1265117794}
   scoreBoard: {fileID: 1698779674}
+  currUpgradeMenu: {fileID: 0}
   pauseBoard: {fileID: 2140875296}
   happinessPercent: 0.4
 --- !u!4 &2019233587
@@ -15018,6 +15019,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709222116831088066, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 364.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709222116831088066, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 489.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6290b7c8553690468c6bc575ccd265a, type: 3}
