@@ -82,4 +82,6 @@ Development Log
   - Changed the Upgrade menu buttons to buy button [Angie]
   - Fixed button click on towers to display the Upgrade Menu [Nick]
   - Made changes in the Fan and entertainment buttons [Angie]
+  - Added Tower text and changed the tower sell amount to $80 [Angie]
+
 
