@@ -31,6 +31,9 @@ public class UIScript : MonoBehaviour
     private float rangeUpgradeCount;
     private float happyUpgradeCount;
 
+    //score manager for upgrade menu
+    public ScoreManager sMan;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +61,9 @@ public class UIScript : MonoBehaviour
         rangeUpgradeCount = 0;
         happyUpgradeCount = 0;
 
+        //score manager
+        sMan = GameObject.Find("GameManager").GetComponent<ScoreManager>();
+
     }
 
     // Update is called once per frame
@@ -71,7 +77,12 @@ public class UIScript : MonoBehaviour
     }
 
     void OnMouseDown() {
-        ui_prefab.gameObject.SetActive(true);
+        if (ui_prefab.activeSelf == false)
+        {
+            ui_prefab.gameObject.SetActive(true);
+            sMan.closeOldUpgradeMenu(ui_prefab);
+        }
+        
     }
 
     void OnMouseExit() {

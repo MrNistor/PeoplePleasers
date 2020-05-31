@@ -12,6 +12,8 @@ public class ScoreManager : MonoBehaviour
     public GameObject winScreen;  // requires winning screen object (make sure it is disabled by default)
     public GameObject loseScreen;  // requires losing screen object (make sure it is disabled by default)
     public GameObject scoreBoard;  // requires SpawnCanvas object with Score component
+    public GameObject currUpgradeMenu;  // the upgrade menu that is currently opened
+    //public GameObject newUpgradeMenu;  // the upgrade menu most recently opened in UIScript
     // pause
     public GameObject pauseBoard;
     private bool isPasuse;
@@ -66,5 +68,16 @@ public class ScoreManager : MonoBehaviour
     private void OnStart()
     {
         Time.timeScale = 1f;
+    }
+
+    public void closeOldUpgradeMenu(GameObject newMenu)
+    {
+        if (currUpgradeMenu != null)
+        {
+            currUpgradeMenu.SetActive(false);
+            
+        }
+
+        currUpgradeMenu = newMenu;
     }
 }
