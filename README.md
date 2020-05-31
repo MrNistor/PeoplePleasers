@@ -75,6 +75,11 @@ Development Log
   - Level 3 and 4 are now same as level 1 and 2 except tutorial [Jun]
   - Completed updated tutorial [Leighlyn]
   - Completed tower image follows mouse until tower is placed [Leighlyn]
+- May 27, 2020
+  - Pause and resume function finish [Jun]
+  - Add tutorial to let user know press Space make it pause [Jun]
+  - Add when money is not enough and while tower is selected clicking tile will erase the tower selected [Jun]
+  - Added button to cancel selected tower [Jun]
 - May 29, 2020
   - Added rich click button to enable the menu [Alex, Angie]
   - Added exitMenu function in the menu [Angie]
