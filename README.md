@@ -83,9 +83,10 @@ Development Log
 - May 29, 2020
   - Added rich click button to enable the menu [Alex, Angie]
   - Added exitMenu function in the menu [Angie]
+  - Fixed button click on towers to display the Upgrade Menu [Nick]
 - May 30, 2020
   - Changed the Upgrade menu buttons to buy button [Angie]
-  - Fixed button click on towers to display the Upgrade Menu [Nick]
+  - Fixed upgrade menu layout and design to properly scale with screen [Nick]
   - Made changes in the Fan and entertainment buttons [Angie]
   - Added Tower text and changed the tower sell amount to $80 [Angie]
 
