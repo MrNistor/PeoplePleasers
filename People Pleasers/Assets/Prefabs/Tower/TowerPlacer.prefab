@@ -106,7 +106,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525134332}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1191f6bf00fc9a428a029864e741473, type: 3}
   m_Name: 
@@ -126,10 +126,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3fa598f4c79d4ef8b9a853c6b3cf559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rangeButton: {fileID: 0}
+  happyButton: {fileID: 0}
+  sellButton: {fileID: 0}
+  rangeLevel: {fileID: 0}
+  happyLevel: {fileID: 0}
   ui_prefab: {fileID: 4302265334469942903}
+  range: {fileID: 0}
+  moneyObj: {fileID: 0}
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
   sprite: {fileID: 0}
+  moneyAmount: 0
+  sMan: {fileID: 0}
 --- !u!61 &525134333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -539,7 +548,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32523541324321630}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1191f6bf00fc9a428a029864e741473, type: 3}
   m_Name: 
@@ -559,10 +568,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3fa598f4c79d4ef8b9a853c6b3cf559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rangeButton: {fileID: 0}
+  happyButton: {fileID: 0}
+  sellButton: {fileID: 0}
+  rangeLevel: {fileID: 0}
+  happyLevel: {fileID: 0}
   ui_prefab: {fileID: 2647866430133035535}
+  range: {fileID: 0}
+  moneyObj: {fileID: 0}
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
   sprite: {fileID: 0}
+  moneyAmount: 0
+  sMan: {fileID: 0}
 --- !u!50 &332250400368758673
 Rigidbody2D:
   serializedVersion: 4
@@ -702,7 +720,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32523541533314193}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1191f6bf00fc9a428a029864e741473, type: 3}
   m_Name: 
@@ -722,10 +740,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3fa598f4c79d4ef8b9a853c6b3cf559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rangeButton: {fileID: 0}
+  happyButton: {fileID: 0}
+  sellButton: {fileID: 0}
+  rangeLevel: {fileID: 0}
+  happyLevel: {fileID: 0}
   ui_prefab: {fileID: 2647866430133035535}
+  range: {fileID: 0}
+  moneyObj: {fileID: 0}
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
   sprite: {fileID: 0}
+  moneyAmount: 0
+  sMan: {fileID: 0}
 --- !u!50 &941796199
 Rigidbody2D:
   serializedVersion: 4
@@ -1021,7 +1048,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32523542556377951}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1191f6bf00fc9a428a029864e741473, type: 3}
   m_Name: 
@@ -1041,10 +1068,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3fa598f4c79d4ef8b9a853c6b3cf559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rangeButton: {fileID: 0}
+  happyButton: {fileID: 0}
+  sellButton: {fileID: 0}
+  rangeLevel: {fileID: 0}
+  happyLevel: {fileID: 0}
   ui_prefab: {fileID: 6106817351420486208}
+  range: {fileID: 0}
+  moneyObj: {fileID: 0}
   startColor: {r: 1, g: 1, b: 1, a: 1}
   mouseOverColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
   sprite: {fileID: 0}
+  moneyAmount: 0
+  sMan: {fileID: 0}
 --- !u!50 &6900960806463199564
 Rigidbody2D:
   serializedVersion: 4
@@ -1201,6 +1237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui_prefab: {fileID: 2647866430133035535}
+  sMan: {fileID: 0}
 --- !u!114 &908107790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1214,6 +1251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui_prefab: {fileID: 4302265334469942903}
+  sMan: {fileID: 0}
 --- !u!114 &1292614371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,6 +1265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui_prefab: {fileID: 6106817351420486208}
+  sMan: {fileID: 0}
 --- !u!114 &7849445072145691471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1240,6 +1279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui_prefab: {fileID: 6711922198593840863}
+  sMan: {fileID: 0}
 --- !u!1001 &2605030749857281335
 PrefabInstance:
   m_ObjectHideFlags: 0
