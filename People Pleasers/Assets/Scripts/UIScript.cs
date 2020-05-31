@@ -10,6 +10,10 @@ public class UIScript : MonoBehaviour
     public Button happyButton;
     public Button sellButton;
 
+    //button text
+    public Text rangeLevel;
+    public Text happyLevel;
+
     //gameObjects
     public GameObject ui_prefab;
     public GameObject range;
@@ -49,6 +53,8 @@ public class UIScript : MonoBehaviour
         happyButton = ui_prefab.transform.GetChild(0).GetChild(0).GetChild(1).GetComponent<Button>();
         happyButton.onClick.AddListener(SellTower);
 
+        rangeLevel = ui_prefab.transform.GetChild(0).GetChild(0).GetChild(8).GetComponent<Text>();
+        happyLevel = ui_prefab.transform.GetChild(0).GetChild(0).GetChild(9).GetComponent<Text>();
 
         moneyObj = GameObject.Find("SpawnCanvas").transform.GetChild(2).gameObject;
         moneyAmount = float.Parse(moneyObj.GetComponent<Text>().text);
@@ -112,17 +118,19 @@ public class UIScript : MonoBehaviour
 
     void UpgradeRange()
     {
-        if (rangeUpgradeCount == 0 || rangeUpgradeCount == 1)
+        if (rangeUpgradeCount < 2)
         {
             range.transform.localScale += new Vector3(rangeAmount, rangeAmount, range.transform.localScale.z);
             ++rangeUpgradeCount;
+            rangeLevel.text = "Level " + (rangeUpgradeCount + 1);
             float upgradeCost = -60f;
             //moneyAmount -= 60f;
             UpdateMoney(upgradeCost);
         }
-        else
+
+        if (rangeUpgradeCount == 2)
         {
-            //max upgrade
+            rangeLevel.text = "Max Level";
         }
     }
 
@@ -162,10 +170,12 @@ public class UIScript : MonoBehaviour
                 UpdateMoney(upgradeCost);
             }
             ++happyUpgradeCount;
+            happyLevel.text = "Level " + (happyUpgradeCount + 1);
         }
-        else
+        
+        if (happyUpgradeCount == 3)
         {
-            //max upgrade
+            happyLevel.text = "Max Level";
         }
         
 
