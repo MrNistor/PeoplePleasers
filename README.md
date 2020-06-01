@@ -82,6 +82,8 @@ Development Log
   - Added button to cancel selected tower [Jun]
 - May 29, 2020
   - Added rich click button to enable the menu [Alex, Angie]
+  - Added sell tower button and functionalities [Alex]
+  - Added different tiers of tower upgrades [Alex]
   - Added exitMenu function in the menu [Angie]
   - Fixed button click on towers to display the Upgrade Menu [Nick]
 - May 30, 2020
