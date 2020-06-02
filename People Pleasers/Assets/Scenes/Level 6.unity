@@ -1106,9 +1106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  winningScore: 20
+  winningScore: 40
   peopleCount: 0
-  totalPeople: 10
+  totalPeople: 73
   winScreen: {fileID: 99415752}
   loseScreen: {fileID: 819211681}
   scoreBoard: {fileID: 37636077}
