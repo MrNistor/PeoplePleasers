@@ -38,6 +38,16 @@ public class UIScript : MonoBehaviour
     //score manager for upgrade menu
     public ScoreManager sMan;
 
+    // hold tower coordinates
+    private Vector3[] v = new Vector3[4];
+    private float vMinX = 0f;
+    private float vMaxX = 0f;
+    private float vMinY = 0f;
+    private float vMaxY = 0f;
+
+    private Vector3 mousePosition;  // get mouse position
+    private float delayTimer = 0f;  // delay for mouse click when tower first placed
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,19 +80,60 @@ public class UIScript : MonoBehaviour
         //score manager
         sMan = GameObject.Find("GameManager").GetComponent<ScoreManager>();
 
+        // get tower coordinates to check if mouse clicked on tower        
+        GetTowerCoordinateRange();
+    }
+
+    // get max and min X and Y coordinates usd to check if mouse is within range
+    void GetTowerCoordinateRange()
+    {
+        GetComponent<RectTransform>().GetWorldCorners(v);
+        vMinX = v[0].x;
+        vMaxX = vMinX;
+        vMinY = v[0].y;
+        vMaxY = vMinY;
+        for (var i = 1; i < 4; i++)
+        {
+            if (v[i].x < vMinX)
+                vMinX = v[i].x;
+            if (v[i].x > vMaxX)
+                vMaxX = v[i].x;
+            if (v[i].y < vMinY)
+                vMinY = v[i].y;
+            if (v[i].y > vMaxY)
+                vMaxY = v[i].y;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        // if(Input.GetMouseButtonDown(1))
-        // {
-        //     ui_prefab.gameObject.SetActive(true);
-        // }
-        
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // delay timer so upgrade menu not displayed once tower is placed
+        if (delayTimer < 0.5f)
+            delayTimer += Time.deltaTime;
+        else
+        {
+            if (Input.GetMouseButtonUp(0))
+            {
+                if (mousePosition.x > vMinX && mousePosition.x < vMaxX && mousePosition.y > vMinY && mousePosition.y < vMaxY)
+                {
+                    OnMouseDownTower();
+                }
+            }
+        }
+        // change color of tower on mouse hover
+        if (mousePosition.x > vMinX && mousePosition.x < vMaxX && mousePosition.y > vMinY && mousePosition.y < vMaxY)
+        {
+            OnMouseOverTower();
+        }
+        else
+        {
+            OnMouseExitTower();
+        }
     }
 
-    void OnMouseDown() {
+    void OnMouseDownTower() {
         if (ui_prefab.activeSelf == false)
         {
             ui_prefab.gameObject.SetActive(true);
@@ -91,12 +142,12 @@ public class UIScript : MonoBehaviour
         
     }
 
-    void OnMouseExit() {
+    void OnMouseExitTower() {
         //Debug.Log("mouse exit");
         sprite.color = startColor;
     }
 
-    void OnMouseOver() {
+    void OnMouseOverTower() {
         //Debug.Log("mouse over");
         sprite.color = mouseOverColor;
     }
