@@ -91,5 +91,6 @@ Development Log
   - Fixed upgrade menu layout and design to properly scale with screen [Nick]
   - Made changes in the Fan and entertainment buttons [Angie]
   - Added Tower text and changed the tower sell amount to $80 [Angie]
-
+- June 01, 2020
+  - Added Level 5 and 6 [Jun]
 
