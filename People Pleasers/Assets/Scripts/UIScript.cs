@@ -174,7 +174,7 @@ public class UIScript : MonoBehaviour
             range.transform.localScale += new Vector3(rangeAmount, rangeAmount, range.transform.localScale.z);
             ++rangeUpgradeCount;
             rangeLevel.text = "Level " + (rangeUpgradeCount + 1);
-            float upgradeCost = -60f;
+            float upgradeCost = -50f;
             //moneyAmount -= 60f;
             UpdateMoney(upgradeCost);
         }
