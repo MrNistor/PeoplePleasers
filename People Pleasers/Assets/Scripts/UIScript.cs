@@ -123,7 +123,8 @@ public class UIScript : MonoBehaviour
             }
         }
         // change color of tower on mouse hover
-        if (mousePosition.x > vMinX && mousePosition.x < vMaxX && mousePosition.y > vMinY && mousePosition.y < vMaxY)
+        if ((mousePosition.x > vMinX && mousePosition.x < vMaxX && mousePosition.y > vMinY && mousePosition.y < vMaxY)
+           || (ui_prefab.activeSelf))
         {
             OnMouseOverTower();
         }
