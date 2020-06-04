@@ -20,17 +20,34 @@ public class TowerPlacer : MonoBehaviour
     private float speed = 1.0f;
     private float amount = 1.0f;
     private float shakeRange = 20.0f;
+
+    // fix tower placement bug
+    private Bounds tileBound;
+    private Vector3 mousePoint;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        // offset everything to ensure all values are positive, otherwise Bounds.Contains() won't work
+        tileBound = GetComponent<CircleCollider2D>().bounds;
+        tileBound.center = new Vector3(tileBound.center.x + 1000f, tileBound.center.y + 1000f, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
+        // detects if mouse pressed on tile
+        if (Input.GetMouseButtonUp(0))
+        {
+            mousePoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePoint.z = 0f;
+            mousePoint.x += 1000f;
+            mousePoint.y += 1000f;
+            if (tileBound.Contains(mousePoint))
+            {
+                OnMouseDownTile();
+            }                
+        }
     }
 
     public void UpdateMoneyText()
@@ -63,7 +80,7 @@ public class TowerPlacer : MonoBehaviour
         moneyObj.transform.rotation = orginalPos;
     }
 
-    private void OnMouseDown()
+    private void OnMouseDownTile()
     {
         Debug.Log("Clicked");
         var selectTowerIndex = RetrieveTower();
@@ -121,7 +138,7 @@ public class TowerPlacer : MonoBehaviour
         else
         {
             Debug.Log("Tower is already placed on that tile");
-
+            HideFollowImages();
         }
     }
 
