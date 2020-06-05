@@ -53,7 +53,13 @@ public class SceneLoader : MonoBehaviour
         PauseChecker();
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         Debug.Log("From LoadNextScene: " + currentSceneIndex);
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        if (currentSceneIndex == 11)
+            currentSceneIndex = 1;
+        else if (currentSceneIndex == 13)
+            currentSceneIndex = 2;
+        else
+            currentSceneIndex++;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     public void LoadMainMenu()
