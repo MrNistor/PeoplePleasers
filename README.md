@@ -93,4 +93,6 @@ Development Log
   - Added Tower text and changed the tower sell amount to $80 [Angie]
 - June 01, 2020
   - Added Level 5 and 6 [Jun]
-
+- June 04, 2020
+  - Added Level 7, 8, 9 [Jun]
+  - Added Last game Scene [Jun]
