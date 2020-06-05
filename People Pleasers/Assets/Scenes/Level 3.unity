@@ -21371,7 +21371,7 @@ PrefabInstance:
     - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
       propertyPath: timeAutomaticClick
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1496115803985791324, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
@@ -28016,7 +28016,7 @@ PrefabInstance:
     - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
         type: 3}
       propertyPath: timeAutomaticClick
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2fa00bbcb44ca949946cdb3c00fa9ad, type: 3}
