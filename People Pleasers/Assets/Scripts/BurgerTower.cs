@@ -48,7 +48,7 @@ public class BurgerTower : MonoBehaviour
             var happinessMeter = other.GetComponent<PersonHappiness>();
             var calculateDistribution = maxDistirubtionPower / detectNumberInRange;
             happinessMeter.RestoreHappiness((calculateDistribution));
-
+            happinessMeter.inTowerRange = true;
         }
         else
         {

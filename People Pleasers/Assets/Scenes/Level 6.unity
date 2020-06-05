@@ -157,7 +157,12 @@ PrefabInstance:
     - target: {fileID: 4583485473914769683, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 858
+      value: 843.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583485473914769683, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 144.9
       objectReference: {fileID: 0}
     - target: {fileID: 4583485474233586216, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
@@ -308,6 +313,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583485475257026891, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583485475257026891, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4583485475666364972, guid: f6290b7c8553690468c6bc575ccd265a,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6290b7c8553690468c6bc575ccd265a, type: 3}
@@ -694,7 +714,7 @@ MonoBehaviour:
     m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 7
+    m_MinSize: 6
     m_MaxSize: 80
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1153,9 +1173,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  winningScore: 35
+  winningScore: 60
   peopleCount: 0
-  totalPeople: 60
+  totalPeople: 80
   winScreen: {fileID: 99415752}
   loseScreen: {fileID: 819211681}
   scoreBoard: {fileID: 37636077}
@@ -2257,7 +2277,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 612429540}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2350,7 +2370,7 @@ PrefabInstance:
     - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
       propertyPath: timeAutomaticClick
-      value: 45
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 1496115803985791324, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
@@ -3281,6 +3301,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
+      objectReference: {fileID: 612429540}
+    - target: {fileID: 8485701825715525985, guid: bdbb1ad8a71678c4ca0a33b23ad46423,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8485701825911853733, guid: bdbb1ad8a71678c4ca0a33b23ad46423,
         type: 3}
@@ -3464,8 +3489,8 @@ MonoBehaviour:
     m_FontSize: 70
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 7
-    m_MaxSize: 80
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -5115,7 +5140,7 @@ PrefabInstance:
     - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
         type: 3}
       propertyPath: timeAutomaticClick
-      value: 55
+      value: 65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2fa00bbcb44ca949946cdb3c00fa9ad, type: 3}
@@ -11510,8 +11535,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -854, y: -229}
-  m_SizeDelta: {x: 114.9, y: 109.8}
+  m_AnchoredPosition: {x: -839.1, y: -229}
+  m_SizeDelta: {x: 144.8, y: 109.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1774554512
 MonoBehaviour:

@@ -241,6 +241,7 @@ public class UIScript : MonoBehaviour
 
     void UpdateMoney(float upgradeCost)
     {
+        moneyAmount = float.Parse(moneyObj.GetComponent<Text>().text);
         if (moneyAmount + upgradeCost < 0) //not enough money
         {
             StartCoroutine(MoneyIconShake());

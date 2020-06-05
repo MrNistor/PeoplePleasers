@@ -3475,7 +3475,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 612429540}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -10215,6 +10215,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
+      objectReference: {fileID: 612429540}
+    - target: {fileID: 8485701825715525985, guid: bdbb1ad8a71678c4ca0a33b23ad46423,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8485701825911853742, guid: bdbb1ad8a71678c4ca0a33b23ad46423,
         type: 3}
@@ -11457,7 +11462,7 @@ PrefabInstance:
     - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
         type: 3}
       propertyPath: timeAutomaticClick
-      value: 55
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6659707372534311961, guid: e2fa00bbcb44ca949946cdb3c00fa9ad,
         type: 3}
@@ -14561,7 +14566,7 @@ PrefabInstance:
     - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
       propertyPath: timeAutomaticClick
-      value: 45
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1496115803985791299, guid: 7cd31bd86cf6d624db89d0a02195aa17,
         type: 3}
