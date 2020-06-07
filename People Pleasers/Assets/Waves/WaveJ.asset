@@ -18,4 +18,4 @@ MonoBehaviour:
     type: 3}
   timeBetweenSpawns: 1
   numberOfPerson: 8
-  pMoveSpeed: 1
+  pMoveSpeed: 2
