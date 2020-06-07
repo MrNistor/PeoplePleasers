@@ -431,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2118013458, guid: f6290b7c8553690468c6bc575ccd265a, type: 3}
       propertyPath: m_Text
-      value: 640
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 4583485473914769680, guid: f6290b7c8553690468c6bc575ccd265a,
         type: 3}
@@ -3042,7 +3042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  winningScore: 40
+  winningScore: 50
   peopleCount: 0
   totalPeople: 73
   winScreen: {fileID: 99415752}

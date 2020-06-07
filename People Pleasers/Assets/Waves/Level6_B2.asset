@@ -16,6 +16,6 @@ MonoBehaviour:
     type: 3}
   pathPrefabs: {fileID: 8137244573843806201, guid: bfcc696e7cddb3446ba6dff582929ca6,
     type: 3}
-  timeBetweenSpawns: 0.5
+  timeBetweenSpawns: 0.4
   numberOfPerson: 10
   pMoveSpeed: 2
