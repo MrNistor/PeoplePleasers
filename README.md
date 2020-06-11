@@ -7,6 +7,7 @@ Website Link: https://github.com/MrNistor/PeoplePleasers/wiki
 
 ----------------------------
 Development Log
+Link to Trello Board: https://trello.com/b/FFqDZ4Wo/css-385-people-pleasers
 ----------------------------
 - May 3, 2020:
   - Completed conceptual prototype (fleshing out game idea and mechanics) [all team members]
@@ -97,6 +98,17 @@ Development Log
   - Added Tower text and changed the tower sell amount to $80 [Angie]
 - June 01, 2020
   - Added Level 5 and 6 [Jun]
+  - Added tower price, fixed tutorial, make fan and burger match color of people [Leighlyn]
 - June 04, 2020
   - Added Level 7, 8, 9 [Jun]
   - Added Last game Scene [Jun]
+  - Fixed tower upgrade menu so upgrade menu only pops up when tower image clicked [Leighlyn]
+  - Change upgrade costs [Alex]
+  - Fixed tower placement bug that prevent tower from being placed within range of another tower [Leighlyn]
+- June 6, 2020
+  - Adjusted people spawning speed to balance game [Jun, Leighlyn]
+  - Final game testing before final presentation, fixed some minor bugs [Leighlyn]
+- June 9, 2020
+  - Finish creating game trailer [Leighlyn]
+  - Finish creating presentation video [all team members]
+  - Presented final game to class [all team members]
