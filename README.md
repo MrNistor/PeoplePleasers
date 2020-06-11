@@ -4,7 +4,9 @@ The final project called "People Pleasers" for CSS 385
 Unity Version: 2018.4.20f1
 
 Website Link: https://github.com/MrNistor/PeoplePleasers/wiki
+
 Link to Trello Board: https://trello.com/b/FFqDZ4Wo/css-385-people-pleasers
+
 ----------------------------
 Development Log
 ----------------------------
